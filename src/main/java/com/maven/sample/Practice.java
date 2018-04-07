@@ -28,7 +28,11 @@ public class Practice extends SeleniumBase{
 		 Select s=new Select(driver.findElement(By.id("state")));
 		 s.selectByIndex(1);
 		 driver.findElement(By.id("login_btn")).click();
-		 Thread.sleep(3000);
+		 Thread.sleep(1000);
+		 driver.findElement(By.id("login_btn")).click();
+		 System.out.println(driver.findElement(By.id("feedbackSection")).getText());
+
+		
 		 
 	 }
 		

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15902" started-at="2018-04-07T05:09:07Z" finished-at="2018-04-07T05:09:23Z">
+  <suite name="Default suite" duration-ms="10647" started-at="2018-04-07T05:28:05Z" finished-at="2018-04-07T05:28:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15902" started-at="2018-04-07T05:09:07Z" finished-at="2018-04-07T05:09:23Z">
+    <test name="Default test" duration-ms="10647" started-at="2018-04-07T05:28:05Z" finished-at="2018-04-07T05:28:15Z">
       <class name="com.maven.sample.Practice">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="testSeleniumBase" is-config="true" duration-ms="1331" started-at="2018-04-07T05:09:07Z" finished-at="2018-04-07T05:09:08Z">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="testSeleniumBase" is-config="true" duration-ms="1439" started-at="2018-04-07T05:28:05Z" finished-at="2018-04-07T05:28:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSeleniumBase -->
-        <test-method status="PASS" signature="testPractice()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="testPractice" duration-ms="14424" started-at="2018-04-07T05:09:08Z" finished-at="2018-04-07T05:09:23Z">
+        <test-method status="PASS" signature="testPractice()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="testPractice" duration-ms="9073" started-at="2018-04-07T05:28:06Z" finished-at="2018-04-07T05:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPractice -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="afterTest" is-config="true" duration-ms="112" started-at="2018-04-07T05:09:23Z" finished-at="2018-04-07T05:09:23Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.maven.sample.Practice@462d5aee]" name="afterTest" is-config="true" duration-ms="112" started-at="2018-04-07T05:28:15Z" finished-at="2018-04-07T05:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
