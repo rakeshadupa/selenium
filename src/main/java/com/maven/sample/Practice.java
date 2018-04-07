@@ -32,7 +32,7 @@ public class Practice extends SeleniumBase{
 		 driver.findElement(By.id("login_btn")).click();
 		 System.out.println(driver.findElement(By.id("feedbackSection")).getText());
 
-		
+		 
 		 
 	 }
 		
