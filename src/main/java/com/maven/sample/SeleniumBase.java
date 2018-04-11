@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class SeleniumBase {
-	static WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeTest
 	public void testSeleniumBase() throws InterruptedException, IOException {

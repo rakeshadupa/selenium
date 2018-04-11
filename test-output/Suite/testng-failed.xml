@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.maven.sample.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="two_emulators.Troop_Messenger_Excel_Report">
+      <class name="com.maven.sample.BasicTest">
         <methods>
-          <include name="z"/>
-          <include name="sendMsg"/>
-          <include name="aTestBase"/>
+          <include name="testSeleniumBase"/>
         </methods>
-      </class> <!-- two_emulators.Troop_Messenger_Excel_Report -->
-      <class name="com.maven.sample.Pagination_Test">
-        <methods>
-          <include name="testPagination"/>
-        </methods>
-      </class> <!-- com.maven.sample.Pagination_Test -->
-      <class name="com.maven.sample.SendEmail">
-        <methods>
-          <include name="email"/>
-        </methods>
-      </class> <!-- com.maven.sample.SendEmail -->
+      </class> <!-- com.maven.sample.BasicTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -22,7 +22,7 @@ public class BasicTest {
 		driver.manage().window().maximize();
 		driver.get("https://www.pizzahut.co.in/customer-feedback.php");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		driver.findElement(By.id("sdfsa")).click();
 		List<WebElement> anchors = driver.findElements(By.tagName("a"));
 		Iterator<WebElement> i = anchors.iterator();
 
