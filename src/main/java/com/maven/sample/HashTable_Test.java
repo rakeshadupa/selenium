@@ -25,7 +25,7 @@ public class HashTable_Test {
 		System.out.println(d.get("name"));
 	}
 
-	// @DataProvider(name = "test")
+	// @DataProviderTest(name = "test")
 	public static Object[][] getData(String excelPath, String sheetName) throws IOException {
 		File f = new File(excelPath);
 		FileInputStream fis = new FileInputStream(f);

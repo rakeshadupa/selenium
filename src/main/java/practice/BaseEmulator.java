@@ -2,24 +2,22 @@ package practice;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class BaseEmulator {
 	File filePath;
-	 XSSFWorkbook w;
+	XSSFWorkbook w;
+
 	public AndroidDriver<AndroidElement> testBaseEmulator(String emulator, int port, String mobile, String pwd)
 			throws InterruptedException, MalformedURLException {
 		AndroidDriver<AndroidElement> driver;
@@ -42,17 +40,18 @@ public class BaseEmulator {
 		driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
 		return driver;
 	}
-	public XSSFSheet exceldata(String sheetName) throws IOException
-	{
-		 filePath = new File("/home/rakesh/Documents/eclipse workspace/selenium_scripts/sample_maven_project/src/excelreport.xlsx");
+
+	public XSSFSheet exceldata(String sheetName) throws IOException {
+		filePath = new File(
+				"/home/rakesh/Documents/eclipse workspace/selenium_scripts/sample_maven_project/src/excelreport.xlsx");
 		FileInputStream fis = new FileInputStream(filePath);
-		 XSSFWorkbook w = new XSSFWorkbook(fis);
+		XSSFWorkbook w = new XSSFWorkbook(fis);
 
 		XSSFSheet sheet = w.getSheet(sheetName);
 		return sheet;
 	}
-	public void writeWorkBook() throws IOException
-	{
+
+	public void writeWorkBook() throws IOException {
 		FileOutputStream fos = new FileOutputStream(filePath);
 		w.write(fos);
 	}

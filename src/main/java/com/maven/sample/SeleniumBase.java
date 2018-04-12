@@ -24,7 +24,6 @@ public class SeleniumBase {
 		driver = new ChromeDriver(options);
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
 	}
 
 	@AfterTest
