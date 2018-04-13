@@ -2,5 +2,11 @@ package com.maven.sample;
 
 public class Practice  {
 
- protected int a=10;
+	
+	
+	
+	
+	
+	public void demo() {
+	}
 }
