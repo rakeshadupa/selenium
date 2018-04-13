@@ -1,55 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="618" started-at="2018-04-12T10:46:56Z" finished-at="2018-04-12T10:46:57Z">
+  <suite name="Suite" duration-ms="7423" started-at="2018-04-13T08:55:46Z" finished-at="2018-04-13T08:55:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="618" started-at="2018-04-12T10:46:56Z" finished-at="2018-04-12T10:46:57Z">
-      <class name="com.maven.sample.DataProviderTest">
-        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.sample.DataProviderTest@37374a5e]" name="testDataProvider" duration-ms="9" started-at="2018-04-12T10:46:57Z" data-provider="getData" finished-at="2018-04-12T10:46:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rakesh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[india]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test" duration-ms="7423" started-at="2018-04-13T08:55:46Z" finished-at="2018-04-13T08:55:53Z">
+      <class name="extent.Naukri_Window_Handles">
+        <test-method status="PASS" signature="closeNaukriWindows()[pri:0, instance:extent.Naukri_Window_Handles@757942a1]" name="closeNaukriWindows" duration-ms="7388" started-at="2018-04-13T08:55:46Z" finished-at="2018-04-13T08:55:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.maven.sample.DataProviderTest@37374a5e]" name="testDataProvider" duration-ms="1" started-at="2018-04-12T10:46:57Z" data-provider="getData" finished-at="2018-04-12T10:46:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sathish]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[654321]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[america]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-      </class> <!-- com.maven.sample.DataProviderTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeNaukriWindows -->
+      </class> <!-- extent.Naukri_Window_Handles -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

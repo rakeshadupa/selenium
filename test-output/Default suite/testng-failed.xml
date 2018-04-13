@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.sample.DataProviderTest">
+      <class name="extent.Naukri_Window_Handles">
         <methods>
-          <include name="testDataProvider"/>
+          <include name="closeNaukriWindows"/>
         </methods>
-      </class> <!-- com.maven.sample.DataProviderTest -->
+      </class> <!-- extent.Naukri_Window_Handles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

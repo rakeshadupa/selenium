@@ -2,20 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners> 
-<listener class-name="com.maven.sample.ExtentReporterNG"></listener>
+<listener class-name="extent.ExtentReporterNG"></listener>
 </listeners>
-
-
-
-
-
-
-
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.maven.sample.Naukri_Window_Handles"/>
-       <class name="com.maven.sample.BasicTest"/>
+      <class name="extent.Naukri_Window_Handles"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

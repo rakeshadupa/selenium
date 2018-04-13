@@ -1,4 +1,4 @@
-package com.maven.sample;
+package extent;
 
 import java.util.Set;
 
@@ -8,12 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-
 public class Naukri_Window_Handles{
 	static WebDriver driver;
 
 	@Test
-	public void test_CloseAllWindowsExceptMainWindow() {
+	public void closeNaukriWindows() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipseworkspace/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -25,6 +24,8 @@ public class Naukri_Window_Handles{
 		String mainWindow = getMainWindowHandle();
 		Assert.assertTrue(closeAllOtherWindows(mainWindow));
 		Assert.assertTrue(windowTitle.contains("Jobs - Recruitment"), "Main window title is not matching");
+		Thread.sleep(2000);
+		driver.close();
 	}
 		
 	public String getMainWindowHandle() {

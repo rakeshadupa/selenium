@@ -1,4 +1,4 @@
-package com.maven.sample;
+package extent;
 
 import java.io.File;
 import java.util.Calendar;
