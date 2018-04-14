@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="extent_reports.ExtentReporterNG"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="extent.Naukri_Window_Handles">
+      <class name="extent_reports.Extent_reports_screenShots">
         <methods>
-          <include name="closeNaukriWindows"/>
+          <include name="freemCRMLogoTest"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- extent.Naukri_Window_Handles -->
+      </class> <!-- extent_reports.Extent_reports_screenShots -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

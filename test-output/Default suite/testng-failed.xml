@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extent.Naukri_Window_Handles">
+      <class name="com.maven.sample.Practice1">
         <methods>
-          <include name="closeNaukriWindows"/>
+          <include name="testSeleniumBase"/>
+          <include name="test"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- extent.Naukri_Window_Handles -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

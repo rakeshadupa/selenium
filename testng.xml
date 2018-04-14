@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners> 
-<listener class-name="extent.ExtentReporterNG"></listener>
+<listener class-name="extent_reports.ExtentReporterNG"></listener>
 </listeners>
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="extent.Naukri_Window_Handles"/>
+      <class name="extent_reports.Extent_reports_screenShots"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
