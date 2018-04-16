@@ -1,27 +1,19 @@
 package com.maven.sample;
 
-import java.util.List;
+class Boom {
+	protected Boom() {
+		System.out.println("super");
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
-public class Practice1 extends SeleniumBase {
-
-@Test
-public void test() {
-driver.get("https://www.freecrm.com/index.html");
-List<WebElement> l=driver.findElements(By.tagName("a"));
-//driver.navigate().refresh();
-for(WebElement i: l)
-{
-System.out.println(i.getText());
-
-
-
-
-
+	}
 }
 
-}
+public class Practice1 extends Boom {
+
+	private Practice1() {
+		System.out.println("sub");
+	}
+
+	public static void main(String[] args) {
+		new Practice1();
+	}
 }
