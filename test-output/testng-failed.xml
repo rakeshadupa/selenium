@@ -5,8 +5,8 @@
     <classes>
       <class name="com.maven.sample.Practice1">
         <methods>
+          <include name="testSel"/>
           <include name="testSeleniumBase"/>
-          <include name="test"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.maven.sample.Practice1 -->

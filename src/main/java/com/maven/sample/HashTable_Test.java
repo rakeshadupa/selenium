@@ -36,7 +36,6 @@ public class HashTable_Test {
 		// System.out.println(rowCount);
 		// System.out.println(colCount);
 		Object[][] obj = new Object[rowCount][1];
-		
 
 		for (int i = 1; i <= rowCount; i++) {
 			Hashtable<String, String> data = new Hashtable<String, String>();

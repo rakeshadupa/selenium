@@ -28,6 +28,11 @@ public class SeleniumBase {
 
 	@AfterTest
 	public void afterTest() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		driver.close();
 	}
 
