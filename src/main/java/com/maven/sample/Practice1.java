@@ -1,13 +1,11 @@
 package com.maven.sample;
 
-public class Practice1 extends SeleniumBase {
+import org.openqa.selenium.By;
+
+public class Practice1 extends SeleniumBase{
+public void demo() {
 
 
-
-
-
-
-
-
+}
 
 }
