@@ -1,4 +1,5 @@
-package com.maven.sample;
+package datadriven;
+
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -12,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.opencsv.CSVReader;
 
-public class Practice1 {
+public class CSVHashTable {
 	@DataProvider
 	public Object[][] demo() throws InterruptedException, IOException {
 		CSVReader r = new CSVReader(new FileReader("/home/rakesh/Downloads/sample.csv"));

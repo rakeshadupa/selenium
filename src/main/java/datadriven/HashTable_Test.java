@@ -1,4 +1,4 @@
-package com.maven.sample;
+package datadriven;
 
 import java.io.File;
 import java.io.FileInputStream;

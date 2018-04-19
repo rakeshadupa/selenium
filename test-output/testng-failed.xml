@@ -5,9 +5,7 @@
     <classes>
       <class name="com.maven.sample.Practice1">
         <methods>
-          <include name="demo"/>
-          <include name="testSeleniumBase"/>
-          <include name="afterTest"/>
+          <include name="testCSV" invocation-numbers="3"/>
         </methods>
       </class> <!-- com.maven.sample.Practice1 -->
     </classes>
