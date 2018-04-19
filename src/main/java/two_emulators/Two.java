@@ -39,8 +39,8 @@ public class Two implements Runnable {
 			driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:5000/wd/hub"), cap);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("sabyasachi.panda@tvisha.in");
-			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("spa@TECH123");
+			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("reciever username");
+			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("reciever password");
 			driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
 			Thread.sleep(10000);
 			File fx = new File("/home/rakesh/Documents/eclipse workspace/selenium_scripts/sample_maven_project/src/excelreport.xlsx");

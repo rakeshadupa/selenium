@@ -19,7 +19,7 @@ public class SeleniumBase {
 		options.addArguments("start-maximized");
 		options.addArguments("--ignore-certificate-errors");
 		options.addArguments("--disable-popup-blocking");
-		options.addArguments("--incognito");
+//		options.addArguments("--incognito");
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}

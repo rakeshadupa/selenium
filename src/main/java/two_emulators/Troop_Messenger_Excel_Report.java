@@ -38,12 +38,12 @@ public class Troop_Messenger_Excel_Report {
 			driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("9133559366");
-			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("recommend139");
+			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("username of sender");//username of sender
+			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("password of sender");//password of sender
 			driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
 			Thread.sleep(10000);
 			driver.findElementById("com.tvisha.troopmessenger:id/actionSearch").click();
-			driver.findElementById("com.tvisha.troopmessenger:id/search").sendKeys("panda");
+			driver.findElementById("com.tvisha.troopmessenger:id/search").sendKeys("panda");//key to search for contact
 			driver.findElementById("com.tvisha.troopmessenger:id/userName").click();
 		}
 		@Test

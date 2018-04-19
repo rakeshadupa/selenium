@@ -39,12 +39,12 @@ public void run()
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			Thread.sleep(10000);
 
-			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("9133559366");
-			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("recommend139");
+			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("username");
+			driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("password");
 			driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click(); 
 			Thread.sleep(10000);
 			driver.findElementById("com.tvisha.troopmessenger:id/actionSearch").click();
-			driver.findElementById("com.tvisha.troopmessenger:id/search").sendKeys("sabyasachi panda");
+			driver.findElementById("com.tvisha.troopmessenger:id/search").sendKeys("chat friend name");
 			driver.findElementById("com.tvisha.troopmessenger:id/userName").click();
 			File fPath = new File("/home/rakesh/Documents/eclipse workspace/selenium_scripts/sample_maven_project/src/excelreport.xlsx");
 			FileInputStream fis = new FileInputStream(fPath);
