@@ -17,8 +17,8 @@ import org.testng.annotations.Test;
 import javafx.scene.input.DataFormat;
 
 public class HashTable_Test {
-	@Test(dataProvider = "test")
-	public void demo(Hashtable<String, String> d) {
+//	@Test(dataProvider = "test")
+	public void demo(HashMap<String, String> d) {
 		System.out.println("*************");
 		System.out.println(d.get("username"));
 		System.out.println(d.get("password"));
@@ -33,12 +33,12 @@ public class HashTable_Test {
 		XSSFSheet s = w.getSheet(sheetName);
 		int rowCount = s.getLastRowNum();
 		int colCount = s.getRow(0).getLastCellNum();
-		// System.out.println(rowCount);
-		// System.out.println(colCount);
+		 System.out.println("rows>>>>>>>"+rowCount);
+		 System.out.println("coloumns>>>>"+colCount);
 		Object[][] obj = new Object[rowCount][1];
 
 		for (int i = 1; i <= rowCount; i++) {
-			Hashtable<String, String> data = new Hashtable<String, String>();
+			HashMap<String, String> data = new HashMap<String, String>();
 			for (int j = 0; j < colCount; j++) {
 
 				// data.put(s.getRow(0).getCell(j).getStringCellValue(),

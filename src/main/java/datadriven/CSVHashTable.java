@@ -1,18 +1,11 @@
 package datadriven;
-
-
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.List;
-
-import org.apache.poi.ss.usermodel.DataFormatter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.opencsv.CSVReader;
-
 public class CSVHashTable {
 	@DataProvider
 	public Object[][] demo() throws InterruptedException, IOException {

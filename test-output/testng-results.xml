@@ -2,54 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="607" started-at="2018-04-19T10:08:18Z" finished-at="2018-04-19T10:08:19Z">
+  <suite name="Default suite" duration-ms="36070" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="607" started-at="2018-04-19T10:08:18Z" finished-at="2018-04-19T10:08:19Z">
-      <class name="datadriven.DataProviderTest">
-        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:datadriven.DataProviderTest@b7dd107]" name="testDataProvider" duration-ms="9" started-at="2018-04-19T10:08:19Z" data-provider="getData" finished-at="2018-04-19T10:08:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rakesh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[india]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="36070" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:36Z">
+      <class name="com.maven.sample.Beehomes_sub">
+        <test-method status="PASS" signature="testBase()[pri:0, instance:com.maven.sample.Beehomes_sub@8646db9]" name="testBase" duration-ms="13489" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method status="PASS" signature="testDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:datadriven.DataProviderTest@b7dd107]" name="testDataProvider" duration-ms="2" started-at="2018-04-19T10:08:19Z" data-provider="getData" finished-at="2018-04-19T10:08:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sathish]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[654321]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[america]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testBase -->
+        <test-method status="PASS" signature="use()[pri:0, instance:com.maven.sample.Beehomes_sub@8646db9]" name="use" duration-ms="22529" started-at="2018-04-20T15:37:13Z" finished-at="2018-04-20T15:37:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataProvider -->
-      </class> <!-- datadriven.DataProviderTest -->
+        </test-method> <!-- use -->
+      </class> <!-- com.maven.sample.Beehomes_sub -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
