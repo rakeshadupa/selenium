@@ -2,20 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36070" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:36Z">
+  <suite name="Default suite" duration-ms="68" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36070" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:36Z">
-      <class name="com.maven.sample.Beehomes_sub">
-        <test-method status="PASS" signature="testBase()[pri:0, instance:com.maven.sample.Beehomes_sub@8646db9]" name="testBase" duration-ms="13489" started-at="2018-04-20T15:37:00Z" finished-at="2018-04-20T15:37:13Z">
+    <test name="Default test" duration-ms="68" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+      <class name="com.maven.sample.Practice1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="beforeSuite" is-config="true" duration-ms="17" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBase -->
-        <test-method status="PASS" signature="use()[pri:0, instance:com.maven.sample.Beehomes_sub@8646db9]" name="use" duration-ms="22529" started-at="2018-04-20T15:37:13Z" finished-at="2018-04-20T15:37:36Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- use -->
-      </class> <!-- com.maven.sample.Beehomes_sub -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="testCase1" duration-ms="13" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="testCase2" duration-ms="9" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.maven.sample.Practice1@64f6106c]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-04-24T08:49:10Z" finished-at="2018-04-24T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
