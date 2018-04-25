@@ -2,7 +2,6 @@ package javascript;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +9,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
-import com.maven.sample.SeleniumBase;
 
 public class BrokenLinks {
 
@@ -26,17 +22,17 @@ public class BrokenLinks {
 				activeLinks.add(links.get(i));
 				String link = links.get(i).getAttribute("href");
 				URL u = new URL(link);
-				// System.out.println(i + " " + url);
 
 				HttpURLConnection connection = (HttpURLConnection) u.openConnection(); //
-				// connection.setConnectTimeout(3000);
 				connection.connect();
 				if (connection.getResponseCode() != 200) {
 					if (connection.getResponseCode() == 404) {
-						System.err.println(connection.getResponseCode() +"  "+connection.getResponseMessage()+ "    " + link);
+						System.err.println(
+								connection.getResponseCode() + "  " + connection.getResponseMessage() + "    " + link);
 
 					} else {
-						System.out.println(connection.getResponseCode() +"  "+connection.getResponseMessage()+ "    " + link);
+						System.out.println(
+								connection.getResponseCode() + "  " + connection.getResponseMessage() + "    " + link);
 					}
 				}
 

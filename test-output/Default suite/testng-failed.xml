@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.sample.SeleniumBase">
+      <class name="utils.Gmail_Inbox">
         <methods>
+          <include name="deleteInbox"/>
           <include name="testSeleniumBase"/>
         </methods>
-      </class> <!-- com.maven.sample.SeleniumBase -->
+      </class> <!-- utils.Gmail_Inbox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

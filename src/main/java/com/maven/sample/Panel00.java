@@ -9,7 +9,7 @@ public class Panel00 extends JPanel {
 
 		JFrame frame = new JFrame();
 
-		frame.setSize(500, 500);
+		frame.setSize(1080, 720);
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
