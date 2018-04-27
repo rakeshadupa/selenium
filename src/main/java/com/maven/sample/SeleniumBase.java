@@ -60,7 +60,7 @@ public class SeleniumBase {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		driver.close();
+//		driver.close();
 	}
 
 }
