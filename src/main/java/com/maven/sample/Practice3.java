@@ -6,12 +6,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class Practice3 extends SeleniumBase {
+public class Practice3 {
+	
+	
 	@Test
-	private void test() {
+	public void test() {
+		
+	
+		
+		int a=2;
+		int b=3;
+		int minVal;
+		minVal = (a < b) ? a : b;
 		
 		
-		
+
+
 	}
 
 }
