@@ -1,10 +1,13 @@
 package datadriven;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.opencsv.CSVReader;
 public class CSVHashTable {
 	@DataProvider
@@ -18,7 +21,8 @@ public class CSVHashTable {
 		Object[][] obj = new Object[rowCount - 1][1];
 
 		for (int i = 1; i < rowCount; i++) {
-			Hashtable<String, String> data = new Hashtable<String, String>();
+			Map<String, String> data = new HashMap<String,String>();
+			
 			for (int j = 0; j < colCount; j++) {
 
 				String key = firstRow[j];
@@ -35,7 +39,7 @@ public class CSVHashTable {
 	}
 
 	@Test(dataProvider = "demo")
-	public void testCSV(Hashtable<String, String> d) {
+	public void testCSV(HashMap<String, String> d) {
 		System.out.println("final out put>>>>>>>" + d.get("user"));
 		System.out.println(">>>>>>>" + d.get("pass"));
 

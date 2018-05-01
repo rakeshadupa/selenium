@@ -1,27 +1,17 @@
 package com.maven.sample;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Rectangle;
 import org.testng.annotations.Test;
 
-public class Practice3 {
-	
-	
-	@Test
-	public void test() {
-		
-	
-		
-		int a=2;
-		int b=3;
-		int minVal;
-		minVal = (a < b) ? a : b;
-		
-		
+public class Practice3 extends SeleniumBase {
 
+	@Test
+	public void demo() {
+		driver.navigate().to("https://www.freecrm.com/index.html");
+		driver.findElement(By.name("username")).sendKeys("rakesh");
+		driver.findElement(By.name("password")).sendKeys("123");
+		driver.close();
 
 	}
-
 }

@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,6 +18,8 @@ import org.testng.annotations.Test;
 import com.google.common.base.Verify;
 
 import javascript.BrokenLinks;
+import utils.UtilityClass;
+import utils.WebEventListener;
 
 public class SeleniumBase {
 	public WebDriver driver;
@@ -47,6 +50,10 @@ public class SeleniumBase {
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
 			break;
 		}
+		EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
+		WebEventListener listnr = new WebEventListener();
+		e_driver.register(listnr);
+		driver = e_driver;
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -60,7 +67,7 @@ public class SeleniumBase {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-//		driver.close();
+		// driver.close();
 	}
 
 }
