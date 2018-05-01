@@ -56,7 +56,7 @@ public class SeleniumBase {
 		driver = e_driver;
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(00, TimeUnit.SECONDS);
 
 	}
 

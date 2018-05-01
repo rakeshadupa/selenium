@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26372" started-at="2018-05-01T09:12:22Z" finished-at="2018-05-01T09:12:48Z">
+  <suite name="Default suite" duration-ms="10972" started-at="2018-05-01T10:01:19Z" finished-at="2018-05-01T10:01:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26372" started-at="2018-05-01T09:12:22Z" finished-at="2018-05-01T09:12:48Z">
+    <test name="Default test" duration-ms="10972" started-at="2018-05-01T10:01:19Z" finished-at="2018-05-01T10:01:30Z">
       <class name="com.maven.sample.Practice3">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice3@1d371b2d]" name="testSeleniumBase" is-config="true" duration-ms="1557" started-at="2018-05-01T09:12:22Z" finished-at="2018-05-01T09:12:23Z">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice3@1d371b2d]" name="testSeleniumBase" is-config="true" duration-ms="1664" started-at="2018-05-01T10:01:19Z" finished-at="2018-05-01T10:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSeleniumBase -->
-        <test-method status="FAIL" signature="demo()[pri:0, instance:com.maven.sample.Practice3@1d371b2d]" name="demo" duration-ms="24780" started-at="2018-05-01T09:12:23Z" finished-at="2018-05-01T09:12:48Z">
+        <test-method status="FAIL" signature="demo()[pri:0, instance:com.maven.sample.Practice3@1d371b2d]" name="demo" duration-ms="9273" started-at="2018-05-01T10:01:20Z" finished-at="2018-05-01T10:01:30Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"passord"}
+              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"pasword"}
   (Session info: chrome=66.0.3359.117)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.4.0-119-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -23,11 +23,11 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.3
 System info: host: 'rakesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-119-generic', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.117, webStorageEnabled: true}
-Session ID: 03f3beeb0123ee1164aeef30a1636c47
-*** Element info: {Using=name, value=passord}]]>
+Session ID: d90fe73291fb44d4fd0df08eeceda712
+*** Element info: {Using=name, value=pasword}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"passord"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"pasword"}
   (Session info: chrome=66.0.3359.117)
   (Driver info: chromedriver=2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752),platform=Linux 4.4.0-119-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -36,8 +36,8 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.3
 System info: host: 'rakesh', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-119-generic', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540471 (9c759b81a907e7..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.117, webStorageEnabled: true}
-Session ID: 03f3beeb0123ee1164aeef30a1636c47
-*** Element info: {Using=name, value=passord}
+Session ID: d90fe73291fb44d4fd0df08eeceda712
+*** Element info: {Using=name, value=pasword}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -61,7 +61,7 @@ at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
 at com.sun.proxy.$Proxy6.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
-at com.maven.sample.Practice3.demo(Practice3.java:13)
+at com.maven.sample.Practice3.demo(Practice3.java:14)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

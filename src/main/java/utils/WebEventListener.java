@@ -53,8 +53,9 @@ public class WebEventListener extends SeleniumBase implements WebDriverEventList
 
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
+
 		try {
-			UtilityClass.takeScreenshot(driver);
+			UtilityClass.takeScreenshot(driver, error.toString().substring(20, 30));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -78,7 +79,6 @@ public class WebEventListener extends SeleniumBase implements WebDriverEventList
 	}
 
 	public void beforeAlertAccept(WebDriver driver) {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -128,7 +128,5 @@ public class WebEventListener extends SeleniumBase implements WebDriverEventList
 		// TODO Auto-generated method stub
 
 	}
-
-
 
 }
