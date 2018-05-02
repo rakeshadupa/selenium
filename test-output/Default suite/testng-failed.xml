@@ -6,7 +6,6 @@
       <class name="com.maven.sample.Practice3">
         <methods>
           <include name="demo"/>
-          <include name="testSeleniumBase"/>
         </methods>
       </class> <!-- com.maven.sample.Practice3 -->
     </classes>
