@@ -50,10 +50,10 @@ public class SeleniumBase {
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
 			break;
 		}
-		EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
+	/*	EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
 		WebEventListener listnr = new WebEventListener();
 		e_driver.register(listnr);
-		driver = e_driver;
+		driver = e_driver;*/
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(00, TimeUnit.SECONDS);

@@ -14,7 +14,7 @@ public class UtilityClass {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentPath = System.getProperty("user.dir");
 		FileUtils.copyFile(src, new File(currentPath + "/screenshots/" + System.currentTimeMillis() +exceptionName+ ".png"));
-		//
+		
 		
 		
 	
