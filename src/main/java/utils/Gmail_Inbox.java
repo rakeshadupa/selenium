@@ -2,7 +2,7 @@ package utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
-import org.testng.annotations.Test;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.maven.sample.SeleniumBase;
 
@@ -21,7 +21,7 @@ public class Gmail_Inbox extends SeleniumBase {
 		driver.findElement(By.xpath("//a[@role='button']")).click();
 		driver.findElement(By.id("ogbkddg:6")).click();
 		driver.findElements(By.xpath("//div[@class='aKw']")).get(tabIndex).click();
-		for (int i = 0; i < 12; i++) {
+		for (int i = 0; i < 59; i++) {
 
 			try {
 				driver.findElement(By.xpath("//div[@role='presentation']")).click();
@@ -34,11 +34,10 @@ public class Gmail_Inbox extends SeleniumBase {
 			} catch (ElementNotInteractableException e) {
 				Thread.sleep(2000);
 
-				driver.findElement(By.xpath("//div[@class='ar9 T-I-J3 J-J5-Ji']")).click();
-			} catch (Exception e) {
-				Thread.sleep(2000);
+				JavascriptExecutor js = ((JavascriptExecutor) driver);
+				js.executeScript("arguments[0].click();",
+						driver.findElement(By.xpath("//div[@class='ar9 T-I-J3 J-J5-Ji']")));
 
-				driver.findElement(By.xpath("//div[@class='ar9 T-I-J3 J-J5-Ji']")).click();
 			}
 			Thread.sleep(2000);
 

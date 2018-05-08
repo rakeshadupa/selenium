@@ -3,23 +3,12 @@ package com.maven.sample;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import com.google.common.base.Verify;
-
-import javascript.BrokenLinks;
-import utils.UtilityClass;
-import utils.WebEventListener;
 
 public class SeleniumBase {
 	public WebDriver driver;
@@ -33,7 +22,7 @@ public class SeleniumBase {
 			System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipseworkspace/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-infobars");
-			options.addArguments("start-maximized");
+			// options.addArguments("start-maximized");
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--disable-popup-blocking");
 			// options.addArguments("--incognito");
@@ -50,13 +39,14 @@ public class SeleniumBase {
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
 			break;
 		}
-	/*	EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
-		WebEventListener listnr = new WebEventListener();
-		e_driver.register(listnr);
-		driver = e_driver;*/
+		/*
+		 * EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
+		 * WebEventListener listnr = new WebEventListener(); e_driver.register(listnr);
+		 * driver = e_driver;
+		 */
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(00, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
 
