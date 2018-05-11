@@ -2,16 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10920" started-at="2018-05-08T12:00:24Z" finished-at="2018-05-08T12:00:35Z">
+  <suite name="Default suite" duration-ms="166" started-at="2018-05-08T12:55:40Z" finished-at="2018-05-08T12:55:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10920" started-at="2018-05-08T12:00:24Z" finished-at="2018-05-08T12:00:35Z">
+    <test name="Default test" duration-ms="166" started-at="2018-05-08T12:55:40Z" finished-at="2018-05-08T12:55:40Z">
       <class name="com.maven.sample.Practice3">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice3@7403c468]" name="testSeleniumBase" is-config="true" duration-ms="1552" started-at="2018-05-08T12:00:24Z" finished-at="2018-05-08T12:00:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeleniumBase -->
-        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice3@7403c468]" name="demo" duration-ms="9348" started-at="2018-05-08T12:00:26Z" finished-at="2018-05-08T12:00:35Z">
+        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice3@42eca56e]" name="demo" duration-ms="137" started-at="2018-05-08T12:55:40Z" finished-at="2018-05-08T12:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
