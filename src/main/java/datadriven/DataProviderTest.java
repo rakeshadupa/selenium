@@ -22,7 +22,7 @@ public class DataProviderTest {
 	}
 
 	@DataProvider
-	public Object[][] getData() throws IOException {
+	public String[][] getData() throws IOException {
 		File f = new File("/home/rakesh/Documents/hash.xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook wb = null;
@@ -34,7 +34,7 @@ public class DataProviderTest {
 		Sheet sheet = wb.getSheet("Sheet1");
 		int lastRow = sheet.getLastRowNum();
 		int lastCell = sheet.getRow(0).getLastCellNum();
-		Object[][] data = new Object[lastRow][lastCell];
+		String[][] data = new String[lastRow][lastCell];
 		for (int i = 0; i < lastRow; i++) {
 			for (int j = 0; j < lastCell; j++) {
 				DataFormatter Stringdata = new DataFormatter();

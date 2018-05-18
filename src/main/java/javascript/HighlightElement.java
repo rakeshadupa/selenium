@@ -9,14 +9,12 @@ public class HighlightElement {
 	public static void makeElementFlash(WebDriver driver, WebElement element) throws InterruptedException {
 
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
-		for (int i = 1; i <=2; i++) {
+		for (int i = 1; i <= 2; i++) {
 			js.executeScript("arguments[0].style.border='3px solid red'", element);
 			Thread.sleep(200);
 			js.executeScript("arguments[0].style.border='3px solid white'", element);
 			Thread.sleep(200);
-
 		}
-
 	}
 
 }

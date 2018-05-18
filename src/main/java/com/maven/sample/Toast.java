@@ -14,7 +14,7 @@ import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
 
 public class Toast {
-	/*public static String Verify(WebDriver driver) {
+	public static String Verify(WebDriver driver) {
 
 		String result = null;
 		File scrFile = ((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
@@ -28,7 +28,7 @@ public class Toast {
 			System.err.println(e.getMessage());
 		}
 		return result;
-	}*/
+	}
 	
 	
 	
