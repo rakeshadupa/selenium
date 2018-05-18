@@ -1,29 +1,13 @@
 package appium;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.lowagie.text.Row;
-
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -44,8 +28,8 @@ public class AppiumBase {
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("9133559366");
-		driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("recommend139");
+		driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("mobile");
+		driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("password");
 		driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
 		Thread.sleep(40000);
 		driver.findElementById("com.tvisha.troopmessenger:id/options").click();
