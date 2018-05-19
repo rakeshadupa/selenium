@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.sample.Practice1">
+      <class name="com.maven.sample.Practice3">
         <methods>
+          <include name="demo"/>
           <include name="testSeleniumBase"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- com.maven.sample.Practice1 -->
+      </class> <!-- com.maven.sample.Practice3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
