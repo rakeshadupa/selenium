@@ -7,7 +7,6 @@ public class Practice3 {
 	@Test
 	public void demo() throws Exception {
 
-		String a1 = "rakesh";
 
 	}
 }
