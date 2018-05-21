@@ -14,5 +14,6 @@ import javascript.HighlightElement;
 
 public class Practice1 {
 	
+	
 }
 
