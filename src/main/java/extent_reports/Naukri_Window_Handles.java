@@ -2,16 +2,21 @@ package extent_reports;
 
 import java.util.Set;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
-public class Naukri_Window_Handles{
+
+public class Naukri_Window_Handles  {
 	static WebDriver driver;
 
-	@Test
+/*	@Test
 	public void closeNaukriWindows() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipseworkspace/chromedriver");
 		driver = new ChromeDriver();
@@ -21,6 +26,8 @@ public class Naukri_Window_Handles{
 		
 		// To get the main window handle
 		String windowTitle= getCurrentWindowTitle();
+		ExtentReporterNG.test.log(LogStatus.INFO, "this is the log status");
+
 		String mainWindow = getMainWindowHandle();
 		Assert.assertTrue(closeAllOtherWindows(mainWindow));
 		Assert.assertTrue(windowTitle.contains("Jobs - Recruitment"), "Main window title is not matching");
@@ -43,6 +50,8 @@ public class Naukri_Window_Handles{
 		for (String currentWindowHandle : allWindowHandles) {
 			if (!currentWindowHandle.equals(openWindowHandle)) {
 				driver.switchTo().window(currentWindowHandle);
+				
+				
 				driver.close();
 			}
 		}
@@ -52,5 +61,13 @@ public class Naukri_Window_Handles{
 			return true;
 		else
 			return false;
+	}*/
+	@Test
+	public void test() 
+	{
+		System.out.println("before======");
+		ExtentReporterNG.test.log(LogStatus.INFO, "this is the log status");
+System.out.println("before======");
+
 	}
 }

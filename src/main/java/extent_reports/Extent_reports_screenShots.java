@@ -79,8 +79,10 @@ public class Extent_reports_screenShots {
 		String title = driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(title, "Customer Relationship Management Software | SugarCRM");
-	}
+		extentTest.log(LogStatus.INFO, "this is the log status");
 
+	}
+	/*
 	@Test
 	public void freemCRMLogoTest() throws InterruptedException {
 		extentTest = extent.startTest("freemCRMLogoTest");
@@ -88,8 +90,9 @@ public class Extent_reports_screenShots {
 		driver.findElement(By.id("FirstName")).sendKeys("rakesh");
 		Thread.sleep(5000);
 		assertEquals("Sugar Fre Trial | SugarCRM", driver.getTitle(),"not matched");
+		
 	
-	}
+	}*/
 
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {

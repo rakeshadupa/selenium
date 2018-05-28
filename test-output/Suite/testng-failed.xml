@@ -6,15 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="extent_reports.Extent_reports_screenShots">
+      <class name="extent_reports.Naukri_Window_Handles">
         <methods>
-          <include name="freemCRMLogoTest"/>
-          <include name="endReport"/>
-          <include name="setExtent"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- extent_reports.Extent_reports_screenShots -->
+      </class> <!-- extent_reports.Naukri_Window_Handles -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

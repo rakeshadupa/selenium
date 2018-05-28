@@ -53,7 +53,7 @@ public class Beehomes_adding {
 
 	@Test(dataProvider = "raki")
 	public void use(HashMap<String, String> d) throws InterruptedException {
-/*		try {
+	try {
 			driver.findElement(By.xpath("//button[@title='Add Category']")).click();
 		} catch (Exception e) {
 			driver.navigate().refresh();
@@ -69,7 +69,7 @@ public class Beehomes_adding {
 		Thread.sleep(1000);
 
 		driver.findElement(By.id("addCategory")).click();
-		Thread.sleep(1000);*/
+		Thread.sleep(1000);
 
 		 System.out.println(d.get("Category"));
 

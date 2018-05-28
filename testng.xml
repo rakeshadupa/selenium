@@ -7,7 +7,7 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="extent_reports.Extent_reports_screenShots"/>
+      <class name="extent_reports.Naukri_Window_Handles"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

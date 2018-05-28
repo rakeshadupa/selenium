@@ -3,12 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.sample.Practice3">
+      <class name="extent_reports.Extent_reports_screenShots">
         <methods>
-          <include name="demo"/>
-          <include name="testSeleniumBase"/>
+          <include name="freemCRMLogoTest"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.maven.sample.Practice3 -->
+      </class> <!-- extent_reports.Extent_reports_screenShots -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
