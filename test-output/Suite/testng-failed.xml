@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="extent_reports.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" verbose="3" name="Suite(failed)" parallel="methods">
     <classes>
-      <class name="extent_reports.Naukri_Window_Handles">
+      <class name="com.maven.sample.Practice1">
         <methods>
-          <include name="test"/>
+          <include name="run"/>
+          <include name="testSeleniumBase"/>
         </methods>
-      </class> <!-- extent_reports.Naukri_Window_Handles -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Suite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

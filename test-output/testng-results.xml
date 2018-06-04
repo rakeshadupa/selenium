@@ -2,39 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6782" started-at="2018-05-24T13:21:05Z" finished-at="2018-05-24T13:21:12Z">
+  <suite name="Default suite" duration-ms="3271" started-at="2018-06-04T13:40:17Z" finished-at="2018-06-04T13:40:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6782" started-at="2018-05-24T13:21:05Z" finished-at="2018-05-24T13:21:12Z">
-      <class name="extent_reports.Extent_reports_screenShots">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1]" name="setExtent" is-config="true" duration-ms="201" started-at="2018-05-24T13:21:05Z" finished-at="2018-05-24T13:21:05Z">
+    <test name="Default test" duration-ms="3271" started-at="2018-06-04T13:40:17Z" finished-at="2018-06-04T13:40:20Z">
+      <class name="com.maven.sample.Practice1">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice1@7403c468]" name="testSeleniumBase" is-config="true" duration-ms="3213" started-at="2018-06-04T13:40:17Z" finished-at="2018-06-04T13:40:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1]" name="setup" is-config="true" duration-ms="6066" started-at="2018-05-24T13:21:05Z" finished-at="2018-05-24T13:21:11Z">
+        </test-method> <!-- testSeleniumBase -->
+        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice1@7403c468]" name="demo" duration-ms="13" started-at="2018-06-04T13:40:20Z" finished-at="2018-06-04T13:40:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freeCrmTitleTest()[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1]" name="freeCrmTitleTest" duration-ms="26" started-at="2018-05-24T13:21:11Z" finished-at="2018-05-24T13:21:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freeCrmTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1]" name="tearDown" is-config="true" duration-ms="89" started-at="2018-05-24T13:21:11Z" finished-at="2018-05-24T13:21:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=freeCrmTitleTest status=SUCCESS method=Extent_reports_screenShots.freeCrmTitleTest()[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:extent_reports.Extent_reports_screenShots@c81cdd1]" name="endReport" is-config="true" duration-ms="382" started-at="2018-05-24T13:21:11Z" finished-at="2018-05-24T13:21:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- extent_reports.Extent_reports_screenShots -->
+        </test-method> <!-- demo -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

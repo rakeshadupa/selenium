@@ -1,14 +1,13 @@
 package com.maven.sample;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Practice1 {
-	public static void main(String[] args) {
-		
-	 WebDriver driver=new ChromeDriver();
-	 driver.findElement(By.id("")).click();
+public class Practice1 extends SeleniumBase {
+@Test
+	private void demo() {
+	}
+	
+	
+	
 
-}
 }

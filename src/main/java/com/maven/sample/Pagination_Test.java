@@ -16,7 +16,7 @@ public class Pagination_Test {
 	@Test
 public void testPagination() throws InterruptedException
 	{
-	System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipse workspace/chromedriver");
+	System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipseworkspace/chromedriver");
 	WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.troopcrm.com/");

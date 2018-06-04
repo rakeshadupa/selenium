@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.maven.sample.SeleniumBase;
@@ -25,7 +26,7 @@ public class ResetPWDEmail extends SeleniumBase {
 	}
 
 	public String getOtpFromEmail() throws InterruptedException {
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 
 		driver.get(

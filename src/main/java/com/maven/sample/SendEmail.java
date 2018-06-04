@@ -23,7 +23,7 @@ public class SendEmail {
 		// email.send();
 		EmailAttachment attachment = new EmailAttachment();
 		attachment.setPath(
-				"/home/sanketh/Documents/eclipse workspace/selenium_scripts/sample_maven_project/test-output/emailable-report.html");
+				"/home/rakesh/Documents/eclipseworkspace/Appium/sample_maven_project/test-output/emailable-report.html");
 
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		attachment.setDescription("reports");

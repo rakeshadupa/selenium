@@ -10,7 +10,6 @@ public class Practice2 {
 @Test
 	public void test()
 	{
-ExtentReporterNG.test.log(LogStatus.INFO, "this is the log status");
 
 	}
 }

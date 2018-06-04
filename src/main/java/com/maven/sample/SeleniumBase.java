@@ -1,5 +1,6 @@
 package com.maven.sample;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -13,13 +14,14 @@ import org.testng.annotations.BeforeTest;
 public class SeleniumBase {
 	public WebDriver driver;
 
-	String browser = "chrome";
+	String browser = "firefox";
 
 	@BeforeTest
 	public void testSeleniumBase() throws InterruptedException, IOException {
+
 		switch (browser) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "/home/rakesh/Documents/eclipseworkspace/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-infobars");
 			// options.addArguments("start-maximized");
@@ -30,7 +32,7 @@ public class SeleniumBase {
 
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "/home/rakesh/Documents/eclipseworkspace/geckodriver");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/geckodriver");
 			FirefoxProfile profile = new FirefoxProfile();
 			driver = new FirefoxDriver();
 
