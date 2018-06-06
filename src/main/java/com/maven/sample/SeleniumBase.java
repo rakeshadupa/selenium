@@ -1,6 +1,5 @@
 package com.maven.sample;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -9,12 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.BeforeTest;
+
+import utils.WebEventListener;
 
 public class SeleniumBase {
 	public WebDriver driver;
 
-	String browser = "firefox";
+	String browser = "chrome";
 
 	@BeforeTest
 	public void testSeleniumBase() throws InterruptedException, IOException {
@@ -41,11 +43,11 @@ public class SeleniumBase {
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
 			break;
 		}
-		/*
-		 * EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
-		 * WebEventListener listnr = new WebEventListener(); e_driver.register(listnr);
-		 * driver = e_driver;
-		 */
+		
+		/* EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
+		 WebEventListener listnr = new WebEventListener(); e_driver.register(listnr);
+		 driver = e_driver;*/
+		 
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

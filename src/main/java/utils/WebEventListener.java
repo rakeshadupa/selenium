@@ -52,14 +52,14 @@ public class WebEventListener extends SeleniumBase implements WebDriverEventList
 	}
 
 	public void onException(Throwable error, WebDriver driver) {
-	/*	System.out.println("Exception occured: " + error);
+		System.out.println("Exception occured: " + error);
 
 		try {
 			System.out.println("taking screesshot");
 			 UtilityClass.takeScreenshot(driver, error.toString().substring(20, 30));
 		} catch (IOException e) {
 			e.printStackTrace();
-		}*/
+		}
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {

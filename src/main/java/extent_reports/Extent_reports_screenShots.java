@@ -34,9 +34,9 @@ public class Extent_reports_screenShots {
 	@BeforeTest
 	public void setExtent() {
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReporterWithScreenshots.html", true);
-		extent.addSystemInfo("Host Name", "rakesh tvisha");
+	/*	extent.addSystemInfo("Host Name", "rakesh tvisha");
 		extent.addSystemInfo("User Name", "rakesh adupa");
-		extent.addSystemInfo("Environment", "QA");
+		extent.addSystemInfo("Environment", "QA");*/
 
 	}
 
@@ -78,8 +78,8 @@ public class Extent_reports_screenShots {
 		extentTest = extent.startTest("sugarcrm title first");
 		String title = driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals(title, "Customer Relationship Management Software | SugarCRM");
-		extentTest.log(LogStatus.INFO, "this is the log status");
+		Assert.assertEquals(title, "Customer Relationship Management Software | SugarCR");
+		extentTest.log(LogStatus.INFO, "this is the log status==========================");
 
 	}
 	/*
