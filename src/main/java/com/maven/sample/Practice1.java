@@ -1,6 +1,9 @@
 package com.maven.sample;
 
-public class Practice1 {
+import org.testng.annotations.Test;
+
+public class Practice1 extends SeleniumBase {
+	@Test
 	public void demo() {
 
 	}

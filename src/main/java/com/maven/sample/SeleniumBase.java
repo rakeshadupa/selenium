@@ -8,10 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.BeforeTest;
-
-import utils.WebEventListener;
 
 public class SeleniumBase {
 	public WebDriver driver;
@@ -23,8 +20,9 @@ public class SeleniumBase {
 
 		switch (browser) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/chromedriver");
 			ChromeOptions options = new ChromeOptions();
+			
 			options.addArguments("disable-infobars");
 			// options.addArguments("start-maximized");
 			options.addArguments("--ignore-certificate-errors");
@@ -34,7 +32,7 @@ public class SeleniumBase {
 
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/geckodriver");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/geckodriver");
 			FirefoxProfile profile = new FirefoxProfile();
 			driver = new FirefoxDriver();
 
@@ -43,11 +41,12 @@ public class SeleniumBase {
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
 			break;
 		}
-		
-		/* EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
-		 WebEventListener listnr = new WebEventListener(); e_driver.register(listnr);
-		 driver = e_driver;*/
-		 
+
+		/*
+		 * EventFiringWebDriver e_driver = new EventFiringWebDriver(driver);
+		 * WebEventListener listnr = new WebEventListener(); e_driver.register(listnr);
+		 * driver = e_driver;
+		 */
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

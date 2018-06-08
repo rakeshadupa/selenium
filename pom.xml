@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -15,11 +16,11 @@
 	</properties>
 
 	<dependencies>
-	  <dependency>
-    <groupId>com.asprise.ocr</groupId>
-    <artifactId>java-ocr-api</artifactId>
-    <version>15.3.0.3</version>
-    </dependency>  
+		<dependency>
+			<groupId>com.asprise.ocr</groupId>
+			<artifactId>java-ocr-api</artifactId>
+			<version>15.3.0.3</version>
+		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -73,6 +74,14 @@
 			<artifactId>commons-io</artifactId>
 			<version>1.3.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>6.0.0</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
 
 	</dependencies>
 </project>
