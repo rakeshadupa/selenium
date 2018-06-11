@@ -43,11 +43,9 @@ public class Naukri_Window_Handles {
 		for (String currentWindowHandle : allWindowHandles) {
 			if (!currentWindowHandle.equals(openWindowHandle)) {
 				driver.switchTo().window(currentWindowHandle);
-
 				driver.close();
 			}
 		}
-
 		driver.switchTo().window(openWindowHandle);
 		if (driver.getWindowHandles().size() == 1)
 			return true;

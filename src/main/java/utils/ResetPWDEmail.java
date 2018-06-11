@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -45,7 +44,7 @@ public class ResetPWDEmail extends SeleniumBase {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 
-		String linktext = driver.findElement(By.xpath("//a[text()='Click here to Verify']")).getText();
+		String linktext = driver.findElements(By.xpath("//div[contains(text(),'Your OTP')]")).get(1).getText();
 		driver.close();
 		return linktext;
 	}

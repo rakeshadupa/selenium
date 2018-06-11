@@ -5,14 +5,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -21,10 +19,13 @@ import datadriven.HashTable_Test;
 public class Beehomes_adding {
 	public WebDriver driver;
 
-	//	@Test
-	public void testBase() throws InterruptedException {
+	// @Test
+	public void testBase() throws InterruptedException, FileNotFoundException {
 		File f = new File("/home/rakesh/Documents/eclipseworkspace/Appium/beehomes/file.properties");
-		FileInputStream fis = null;
+		FileInputStream fis=null;
+		
+		
+
 		try {
 			fis = new FileInputStream(f);
 		} catch (FileNotFoundException e) {
@@ -53,7 +54,7 @@ public class Beehomes_adding {
 
 	@Test(dataProvider = "raki")
 	public void use(HashMap<String, String> d) throws InterruptedException {
-	try {
+		try {
 			driver.findElement(By.xpath("//button[@title='Add Category']")).click();
 		} catch (Exception e) {
 			driver.navigate().refresh();
@@ -71,7 +72,7 @@ public class Beehomes_adding {
 		driver.findElement(By.id("addCategory")).click();
 		Thread.sleep(1000);
 
-		 System.out.println(d.get("Category"));
+		System.out.println(d.get("Category"));
 
 	}
 

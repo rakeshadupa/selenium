@@ -23,11 +23,12 @@ public class HashTable_Test {
 	}
 
 	@DataProvider(name = "test")
-	public static Object[][] getData(String path, String sheetName) throws IOException {
-		// public static Object[][] getData() throws IOException {
+	public static Object[][] getData(String path, String sheetName) throws
+	IOException {
+	//public static Object[][] getData() throws IOException {
 
-		// File f = new File("/home/rakesh/Downloads/urban_clap.xlsx");
-		File f = new File(path);
+		File f = new File("/home/rakesh/Downloads/urban_clap.xlsx");
+		// File f = new File(path);
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = null;
 		try {
@@ -53,11 +54,11 @@ public class HashTable_Test {
 				String key = df.formatCellValue(s.getRow(0).getCell(j));
 				String value = df.formatCellValue(s.getRow(i).getCell(j));
 				data.put(key, value);
+				System.out.println("data" + data);
 
 			}
 			obj[i - 1][0] = data;
 		}
-
 		return obj;
 
 	}
