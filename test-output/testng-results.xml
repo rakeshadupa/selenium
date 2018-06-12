@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8252" started-at="2018-06-12T04:32:51Z" finished-at="2018-06-12T04:33:00Z">
+  <suite name="Default suite" duration-ms="9016" started-at="2018-06-12T04:59:02Z" finished-at="2018-06-12T04:59:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8252" started-at="2018-06-12T04:32:51Z" finished-at="2018-06-12T04:33:00Z">
-      <class name="com.maven.sample.Practice1">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice1@78186a70]" name="testSeleniumBase" is-config="true" duration-ms="1592" started-at="2018-06-12T04:32:51Z" finished-at="2018-06-12T04:32:53Z">
+    <test name="Default test" duration-ms="9016" started-at="2018-06-12T04:59:02Z" finished-at="2018-06-12T04:59:11Z">
+      <class name="utils.PizzaHut">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:utils.PizzaHut@78186a70]" name="testSeleniumBase" is-config="true" duration-ms="1482" started-at="2018-06-12T04:59:02Z" finished-at="2018-06-12T04:59:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSeleniumBase -->
-        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice1@78186a70]" name="demo" duration-ms="6635" started-at="2018-06-12T04:32:53Z" finished-at="2018-06-12T04:33:00Z">
+        <test-method status="PASS" signature="demo()[pri:0, instance:utils.PizzaHut@78186a70]" name="demo" duration-ms="7512" started-at="2018-06-12T04:59:03Z" finished-at="2018-06-12T04:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-      </class> <!-- com.maven.sample.Practice1 -->
+      </class> <!-- utils.PizzaHut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
