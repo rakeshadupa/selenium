@@ -20,67 +20,72 @@ public class Practice1 extends SeleniumBase {
 		s1.selectByVisibleText("Madhapur");
 		driver.findElement(By.name("next")).click();
 
-		/*
-		 * driver.findElement(By.name("name")).sendKeys("rakesh"); Select s2=new
-		 * Select(driver.findElement(By.id("typeselector")));
-		 * s2.selectByVisibleText("Male");
-		 * driver.findElement(By.name("email")).sendKeys("rakesh@gmail.com");
-		 * driver.findElement(By.name("phone")).sendKeys("1234567890"); Select s3=new
-		 * Select(driver.findElement(By.id("preferred_time")));
-		 * s3.selectByVisibleText("11-3 AM");
-		 * driver.findElement(By.id("address")).sendKeys("address");
-		 * driver.findElement(By.name("date_of_visit")).click();
-		 * driver.findElement(By.xpath("//a[@title='Prev']")).click();
-		 * driver.findElement(By.linkText("30")).click();
-		 * driver.findElement(By.name("your_feedback")).sendKeys("feedback");
-		 * driver.findElements(By.name("how_often_u_visit")).get(0).click();
-		 * driver.findElement(By.name("image1")).sendKeys(
-		 * "/home/rakesh/Downloads/download.jpeg");
-		 * driver.findElement(By.name("image2")).sendKeys(
-		 * "/home/rakesh/Downloads/download.png");
-		 * driver.findElements(By.name("res_clean")).get(0).click();
-		 * driver.findElements(By.name("service_hospitable")).get(0).click();
-		 * driver.findElements(By.name("receive_wat_ordered")).get(0).click();
-		 * driver.findElements(By.name("res_maintained")).get(0).click();
-		 * driver.findElements(By.name("food_liking")).get(0).click();
-		 * driver.findElements(By.name("serve_speedly")).get(0).click();
-		 * driver.findElements(By.name("got_value_for_money")).get(0).click();
-		 * driver.findElements(By.name("will_visit_pizzahut")).get(0).click();
-		 */
+		driver.findElement(By.name("name")).sendKeys("rakesh");
+		Select s2 = new Select(driver.findElement(By.id("typeselector")));
+		s2.selectByVisibleText("Male");
+		driver.findElement(By.name("email")).sendKeys("rakesh@gmail.com");
+		driver.findElement(By.name("phone")).sendKeys("1234567890");
+		Select s3 = new Select(driver.findElement(By.id("preferred_time")));
+		s3.selectByVisibleText("11-3 AM");
+		driver.findElement(By.id("address")).sendKeys("address");
+		driver.findElement(By.name("date_of_visit")).click();
+		driver.findElement(By.xpath("//a[@title='Prev']")).click();
+		driver.findElement(By.linkText("30")).click();
+		driver.findElement(By.name("your_feedback")).sendKeys("feedback");
+		Thread.sleep(500);
+		driver.findElements(By.name("how_often_u_visit")).get(0).click();
+		driver.findElement(By.name("image1")).sendKeys("/home/rakesh/Downloads/download.jpeg");
+		driver.findElement(By.name("image2")).sendKeys("/home/rakesh/Downloads/download.png");
+		driver.findElements(By.name("res_clean")).get(0).click();
+		driver.findElements(By.name("service_hospitable")).get(0).click();
+		driver.findElements(By.name("receive_wat_ordered")).get(0).click();
+		driver.findElements(By.name("res_maintained")).get(0).click();
+		driver.findElements(By.name("food_liking")).get(0).click();
+		driver.findElements(By.name("serve_speedly")).get(0).click();
+		driver.findElements(By.name("got_value_for_money")).get(0).click();
+		driver.findElements(By.name("will_visit_pizzahut")).get(0).click();
+
 		WebElement f = driver.findElement(By.name("math_captcha"));
 		String sum = driver.findElements(By.xpath("//font")).get(0).getText();
 		System.out.println(sum);
-		char opr = sum.charAt(2);
+		String[] data = sum.split("\\s");
+		System.out.println("array" + data.length);
+		String opr = data[1];
 		System.out.println(opr);
 
 		String numberOnly = sum.replaceAll("[^0-9]", "");
 		System.out.println(numberOnly);
-		int first = Integer.parseInt(Character.toString(numberOnly.charAt(0)));
-		int second = Integer.parseInt(Character.toString(numberOnly.charAt(1)));
-		if (opr == '×') {
-			int ans3 = first * second;
-			f.sendKeys(Integer.toString(ans3));
 
-		}
-		else {
+		int first = Integer.parseInt(data[0]);
+		int second = Integer.parseInt(data[2]);
+
 		switch (opr) {
-		case '+':
+		case "+":
 			int ans = first + second;
 			f.sendKeys(Integer.toString(ans));
 
 			break;
-		case '-':
+		case "-":
 			int ans1 = first - second;
 			f.sendKeys(Integer.toString(ans1));
 
 			break;
+		case "×":
+			int ans2 = first * second;
+			f.sendKeys(Integer.toString(ans2));
+
+			break;
+		case "÷":
+			int ans3 = first / second;
+			f.sendKeys(Integer.toString(ans3));
+
+			break;
 
 		default:
-			int ans2 = first / second;
-			f.sendKeys(Integer.toString(ans2));
+			System.out.println("error========");
 			break;
 		}
 
-	}}
+	}
 
 }
