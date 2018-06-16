@@ -1,5 +1,10 @@
 package com.maven.sample;
 
-public class Practice2 {
+import org.testng.annotations.Test;
 
+public class Practice2 {
+	@Test
+	private void demo() {
+
+	}
 }

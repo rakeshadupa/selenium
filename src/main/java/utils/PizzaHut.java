@@ -11,29 +11,66 @@ import org.testng.annotations.Test;
 import com.maven.sample.SeleniumBase;
 
 public class PizzaHut extends SeleniumBase {
+	Select s;
+
 	@Test
 	public void demo() throws InvalidFormatException, IOException, InterruptedException {
 		driver.get("https://www.pizzahut.co.in/customer-feedback.php");
 		driver.findElement(By.xpath("//h4[text()='Dine in Feedback']")).click();
 		driver.findElements(By.xpath("//input[@type='radio']")).get(1).click();
-		Select s = new Select(driver.findElement(By.id("city_id")));
+		s = new Select(driver.findElement(By.id("city_id")));
 		s.selectByVisibleText("Hyderabad");
-		Select s1 = new Select(driver.findElement(By.id("storeId")));
-		s1.selectByVisibleText("Madhapur");
+		s = new Select(driver.findElement(By.id("storeId")));
+		s.selectByVisibleText("Madhapur");
 		driver.findElement(By.name("next")).click();
 
-		driver.findElement(By.name("name")).sendKeys("rakesh");
-		Select s2 = new Select(driver.findElement(By.id("typeselector")));
-		s2.selectByVisibleText("Male");
+		/*driver.findElement(By.name("name")).sendKeys("rakesh");
+		s = new Select(driver.findElement(By.id("typeselector")));
+		s.selectByVisibleText("Male");
 		driver.findElement(By.name("email")).sendKeys("rakesh@gmail.com");
 		driver.findElement(By.name("phone")).sendKeys("1234567890");
-		Select s3 = new Select(driver.findElement(By.id("preferred_time")));
-		s3.selectByVisibleText("11-3 AM");
-		driver.findElement(By.id("address")).sendKeys("address");
+		s = new Select(driver.findElement(By.id("preferred_time")));
+		s.selectByVisibleText("11-3 AM");
+		driver.findElement(By.id("address")).sendKeys("address");*/
+		
+		
+		
 		driver.findElement(By.name("date_of_visit")).click();
 		driver.findElement(By.xpath("//a[@title='Prev']")).click();
 		driver.findElement(By.linkText("30")).click();
-		driver.findElement(By.name("your_feedback")).sendKeys("feedback");
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*	driver.findElement(By.name("your_feedback")).sendKeys("feedback");
 		Thread.sleep(500);
 		driver.findElements(By.name("how_often_u_visit")).get(0).click();
 		driver.findElement(By.name("image1")).sendKeys("/home/rakesh/Downloads/download.jpeg");
@@ -87,6 +124,6 @@ public class PizzaHut extends SeleniumBase {
 			System.out.println("error========");
 			break;
 		}
-
+*/
 	}
 }
