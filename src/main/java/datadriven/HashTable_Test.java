@@ -17,9 +17,12 @@ import org.testng.annotations.Test;
 public class HashTable_Test {
 	@Test(dataProvider = "test")
 	public void demo(HashMap<String, String> d) {
-		System.out.println("*************");
+		if (d.get("Runmode").equals("yes")) {
+			
+	
 		System.out.println(d.get("a"));
 		System.out.println(d.get("b"));
+		}
 	}
 
 	@DataProvider(name = "test")
@@ -36,7 +39,7 @@ public class HashTable_Test {
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
-		Sheet s = w.getSheet(sheetName);
+		Sheet s = w.getSheet("category");
 		int rowCount = s.getLastRowNum();
 		int colCount = s.getRow(0).getLastCellNum();
 		System.out.println("rows>>>>>>>" + rowCount);
@@ -47,14 +50,11 @@ public class HashTable_Test {
 			Map<String, String> data = new HashMap<>();
 			for (int j = 0; j < colCount; j++) {
 
-				// data.put(String.valueOf(s.getRow(0).getCell(j).getStringCellValue()),
-				// String.valueOf(s.getRow(i).getCell(j).getStringCellValue()));
 
 				DataFormatter df = new DataFormatter();
 				String key = df.formatCellValue(s.getRow(0).getCell(j));
 				String value = df.formatCellValue(s.getRow(i).getCell(j));
 				data.put(key, value);
-				System.out.println("data" + data);
 
 			}
 			obj[i - 1][0] = data;

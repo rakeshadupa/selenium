@@ -8,25 +8,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 public class SeleniumBase {
-	public WebDriver driver;
+	public  WebDriver  driver=null;
 
 	String browser = "chrome";
-
 	@BeforeTest
-	public void testSeleniumBase() throws InterruptedException, IOException {
+	public void testSeleniumBase( ) throws InterruptedException, IOException {
 
 		switch (browser) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			
-			options.addArguments("disable-infobars");
+			//options.addArguments("disable-infobars");
 			// options.addArguments("start-maximized");
-			options.addArguments("--ignore-certificate-errors");
-			options.addArguments("--disable-popup-blocking");
+			//options.addArguments("--ignore-certificate-errors");
+			//options.addArguments("--disable-popup-blocking");
 			// options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 
@@ -53,14 +55,15 @@ public class SeleniumBase {
 
 	}
 
-	// @AfterTest
+	 //@AfterTest
 	public void afterTest() {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		// driver.close();
+		driver.close();
+		// driver=null;
 	}
 
 }

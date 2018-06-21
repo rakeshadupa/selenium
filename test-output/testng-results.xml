@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2018-06-15T13:45:34Z" finished-at="2018-06-15T13:45:34Z">
+  <suite name="Suite" duration-ms="13336" started-at="2018-06-21T06:13:15Z" finished-at="2018-06-21T06:13:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2018-06-15T13:45:34Z" finished-at="2018-06-15T13:45:34Z">
+    <test name="Test" duration-ms="5685" started-at="2018-06-21T06:13:15Z" finished-at="2018-06-21T06:13:20Z">
       <class name="com.maven.sample.Practice2">
-        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice2@47db50c5]" name="demo" duration-ms="11" started-at="2018-06-15T13:45:34Z" finished-at="2018-06-15T13:45:34Z">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice2@24a35978]" name="testSeleniumBase" is-config="true" duration-ms="1414" started-at="2018-06-21T06:13:15Z" finished-at="2018-06-21T06:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeleniumBase -->
+        <test-method status="PASS" signature="demo()[pri:0, instance:com.maven.sample.Practice2@24a35978]" name="demo" duration-ms="4242" started-at="2018-06-21T06:13:16Z" finished-at="2018-06-21T06:13:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
       </class> <!-- com.maven.sample.Practice2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+    <test name="Tegst" duration-ms="7610" started-at="2018-06-21T06:13:20Z" finished-at="2018-06-21T06:13:28Z">
+      <class name="com.maven.sample.Practice1">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice1@15b3e5b]" name="testSeleniumBase" is-config="true" duration-ms="713" started-at="2018-06-21T06:13:20Z" finished-at="2018-06-21T06:13:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeleniumBase -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.maven.sample.Practice1@15b3e5b]" name="test1" duration-ms="6893" started-at="2018-06-21T06:13:21Z" finished-at="2018-06-21T06:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.maven.sample.Practice1 -->
+    </test> <!-- Tegst -->
+  </suite> <!-- Suite -->
 </testng-results>
