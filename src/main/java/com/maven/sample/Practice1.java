@@ -1,16 +1,21 @@
 package com.maven.sample;
 
-import org.openqa.selenium.WebDriver;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.Test;
 
-public class Practice1 extends SeleniumBase {
-	
-
+public class Practice1 {
 	@Test
-	public void test1() throws InterruptedException {
-		driver.get("https://www.troopcrm.com/");
-		Thread.sleep(2000);
-		driver.close();
+	public void randomNumber() throws   IOException, EncryptedDocumentException, InvalidFormatException {
+
+
 
 	}
 }

@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="FirstTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="MAC"/>
     <classes>
-      <class name="com.maven.sample.Practice1">
+      <class name="com.maven.sample.Practice2">
         <methods>
-          <include name="test1"/>
-          <include name="testSeleniumBase"/>
+          <include name="setUp" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.maven.sample.Practice1 -->
+      </class> <!-- com.maven.sample.Practice2 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FirstTest(failed) -->
+  <test thread-count="5" name="SecondTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="67.0"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="com.maven.sample.Practice2">
+        <methods>
+          <include name="setUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.maven.sample.Practice2 -->
+    </classes>
+  </test> <!-- SecondTest(failed) -->
+  <test thread-count="5" name="ThirdTest(failed)">
+    <parameter name="browser" value="IE"/>
+    <parameter name="version" value="10.0"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="com.maven.sample.Practice2">
+        <methods>
+          <include name="setUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.maven.sample.Practice2 -->
+    </classes>
+  </test> <!-- ThirdTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
