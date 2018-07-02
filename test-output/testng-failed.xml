@@ -6,6 +6,7 @@
       <class name="com.maven.sample.Practice2">
         <methods>
           <include name="vevo"/>
+          <include name="testSeleniumBase"/>
         </methods>
       </class> <!-- com.maven.sample.Practice2 -->
     </classes>

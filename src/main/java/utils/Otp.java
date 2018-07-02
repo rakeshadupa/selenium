@@ -5,7 +5,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
 
 import com.maven.sample.SeleniumBase;
 
@@ -14,7 +13,7 @@ public class Otp extends SeleniumBase {
 	private static int coloumnsSize;
 
 	
-	public static int getOtpFromPhpMyadmin(WebDriver driver, String url,String projectName, String userName, String pwd, String mobile)
+	public static int getOtpFromPhpMyadmin(WebDriver driver, String url,String projectName, String tableName,String userName, String pwd, String mobile)
 			throws InterruptedException {
 		String stringOtp = null;
 
@@ -22,12 +21,11 @@ public class Otp extends SeleniumBase {
 		driver.findElement(By.id("input_username")).sendKeys(userName);
 		driver.findElement(By.id("input_password")).sendKeys(pwd);
 		driver.findElement(By.id("input_go")).click();
-		driver.findElement(By.xpath("//a[text()="+projectName+"]")).click();
-		driver.findElement(By.xpath("//a[text()='user']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'"+projectName+"')]")).click();
+		driver.findElement(By.xpath("//a[text()='"+tableName+"']")).click();
 		Thread.sleep(3000);
 		listOfColoumns = driver.findElements(By.xpath("//tr/th"));
 		coloumnsSize = listOfColoumns.size();
-
 		int mobileIndex;
 		int otpIndex;
 		mobileIndex = coloumnIndex("mobile") - 1;
@@ -45,14 +43,11 @@ public class Otp extends SeleniumBase {
 
 				stringOtp = driver.findElements(By.xpath("//tr/td[contains(@class,'grid')]")).get(k + difference)
 						.getText();
-
 				System.out.println(stringOtp);
 				break;
-
 			}
 		}
 		return Integer.parseInt(stringOtp);
-
 	}
 
 	private static int coloumnIndex(String coloumnName) {

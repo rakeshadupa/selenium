@@ -1,5 +1,6 @@
 package com.maven.sample;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -31,23 +32,18 @@ public class Toast {
 	}
 	
 	
-	
-	
-	
-public static void main(String[] args) {
-	
-	File f1= new File("/home/rakesh/Videos/sikuli_images/window.png");
+	public static String VerifyForScreenshot(WebDriver driver,BufferedImage screenshot) {
+
 		String result = null;
 		ITesseract instance = new Tesseract();
-		System.out.println("entered===>");
 		instance.setDatapath("/home/rakesh/Documents/eclipseworkspace/Tess4J/tessdata");
 		instance.setLanguage("eng");
 		try {
-			result = instance.doOCR(f1);
+			result = instance.doOCR(screenshot);
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
 		}
-		System.out.println(result);
+		return result;
 	}
 
 }

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11022" started-at="2018-06-28T06:45:29Z" finished-at="2018-06-28T06:45:40Z">
+  <suite name="Default suite" duration-ms="4351" started-at="2018-06-28T13:57:06Z" finished-at="2018-06-28T13:57:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11022" started-at="2018-06-28T06:45:29Z" finished-at="2018-06-28T06:45:40Z">
-      <class name="utils.Otp">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:utils.Otp@2f0a87b3]" name="testSeleniumBase" is-config="true" duration-ms="1361" started-at="2018-06-28T06:45:29Z" finished-at="2018-06-28T06:45:30Z">
+    <test name="Default test" duration-ms="4351" started-at="2018-06-28T13:57:06Z" finished-at="2018-06-28T13:57:11Z">
+      <class name="com.maven.sample.Practice2">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice2@2f0a87b3]" name="testSeleniumBase" is-config="true" duration-ms="1729" started-at="2018-06-28T13:57:06Z" finished-at="2018-06-28T13:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSeleniumBase -->
-        <test-method status="PASS" signature="demo()[pri:0, instance:utils.Otp@2f0a87b3]" name="demo" duration-ms="9641" started-at="2018-06-28T06:45:30Z" finished-at="2018-06-28T06:45:40Z">
+        <test-method status="PASS" signature="vevo()[pri:0, instance:com.maven.sample.Practice2@2f0a87b3]" name="vevo" duration-ms="2603" started-at="2018-06-28T13:57:08Z" finished-at="2018-06-28T13:57:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- utils.Otp -->
+        </test-method> <!-- vevo -->
+      </class> <!-- com.maven.sample.Practice2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
