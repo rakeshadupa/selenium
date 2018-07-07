@@ -9,7 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -18,7 +20,7 @@ public class SeleniumBase {
 	public  WebDriver  driver=null;
 
 	String browser = "chrome";
-	@BeforeTest
+	@BeforeClass
 	public void testSeleniumBase( ) throws InterruptedException, IOException {
 
 		switch (browser) {
@@ -57,7 +59,7 @@ public class SeleniumBase {
 
 	}
 
-	 //@AfterTest
+	@AfterClass
 	public void afterTest() {
 		try {
 			Thread.sleep(3000);

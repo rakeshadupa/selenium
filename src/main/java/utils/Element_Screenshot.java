@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Element_Screenshot {
-	public void testElement_Screenshot(WebDriver driver, WebElement ele) throws IOException {
+	public static File testElement_Screenshot(WebDriver driver, WebElement ele) throws IOException {
 
 		// Get entire page screenshot
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -29,7 +29,8 @@ public class Element_Screenshot {
 		ImageIO.write(eleScreenshot, "png", screenshot);
 
 		// Copy the element screenshot to disk
-		File screenshotLocation = new File("path");
-		FileUtils.copyFile(screenshot, screenshotLocation);
+//		File screenshotLocation = new File("/home/rakesh/Documents/Bug reports/Mr&Mrs/test.png");
+//		FileUtils.copyFile(screenshot, screenshotLocation);
+		return screenshot;
 	}
 }

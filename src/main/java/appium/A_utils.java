@@ -1,6 +1,9 @@
 package appium;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -20,5 +23,14 @@ public class A_utils {
 		t.press(0, scrollStart).perform();
 		t.moveTo(0,scrollEnd).release().perform();
 		
+	}
+	
+	public static String getToast(WebDriver driver)
+	{
+		WebElement toastView = driver.findElement(By.xpath("//android.widget.Toast[1]"));
+		String text = toastView.getAttribute("name");
+		System.err.println("toast   " + text);
+		return text;
+
 	}
 }

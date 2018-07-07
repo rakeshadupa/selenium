@@ -1,16 +1,19 @@
 package com.maven.sample;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
+//@Ignore
 public class Practice3 {
-
-	
-	WebDriver driver;
-	public Practice3(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+	@Test
+	public void demo() {
+		
+		System.out.println("============sdaf==================================");
+		
+		
+		
+		
+		
+		
 	}
-	
 }

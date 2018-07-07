@@ -76,11 +76,11 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 		<dependency>
-    <groupId>io.appium</groupId>
-    <artifactId>java-client</artifactId>
-    <version>5.0.0</version>
-</dependency>
-<!-- Thanks for using https://jar-download.com -->
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
 
 
 	</dependencies>
