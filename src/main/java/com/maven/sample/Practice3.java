@@ -1,14 +1,13 @@
 package com.maven.sample;
 
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 
 //@Ignore
 public class Practice3 {
-	@Test
+	@BeforeClass
 	public void demo() {
 		
-		System.out.println("============sdaf==================================");
+		System.out.println("Practice-3");
 		
 		
 		

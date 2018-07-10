@@ -44,19 +44,23 @@ public class AppiumBase {
 		driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("rakesh.adupa@tvisha.in");
 		driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("recommend139");
 		driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
+		
 		Thread.sleep(50000);
 		try {
-			driver.findElementsById("com.tvisha.troopmessenger:id/item").get(1).click();
+			driver.findElementsById("com.tvisha.troopmessenger:id/item").get(0).click();
 		} catch (Exception e) {
-			driver.findElementsById("com.tvisha.troopmessenger:id/item").get(1).click();
+			driver.findElementsById("com.tvisha.troopmessenger:id/item").get(0).click();
 		}
+		Thread.sleep(5000);
+		System.err.println("Go ahead===========");
+		Thread.sleep(15000);
 		int msgSize = driver.findElementsById("com.tvisha.troopmessenger:id/msgSentStatus").size();
 		WebElement msgStatus = driver.findElementsById("com.tvisha.troopmessenger:id/msgSentStatus").get(msgSize - 1);
 
 		File a = Element_Screenshot.testElement_Screenshot(driver, msgStatus);
 		
 		
-		SikuliUtils.compareImageInSikuli("/home/rakesh/Documents/Bug reports/Mr&Mrs/demo.png", a.getAbsolutePath());
+		//SikuliUtils.compareImageInSikuli("/home/rakesh/Documents/Bug reports/Mr&Mrs/test.png", a.getAbsolutePath());
 
 	}
 

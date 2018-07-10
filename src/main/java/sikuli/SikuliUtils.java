@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.sikuli.script.Finder;
 import org.sikuli.script.Pattern;
 
+
 public class SikuliUtils {
 
 	public static void compareImageInSikuli(String actualImagePath, String expectedImagePath) throws IOException {

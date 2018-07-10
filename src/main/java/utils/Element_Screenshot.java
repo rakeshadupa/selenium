@@ -1,4 +1,5 @@
 package utils;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -29,8 +30,8 @@ public class Element_Screenshot {
 		ImageIO.write(eleScreenshot, "png", screenshot);
 
 		// Copy the element screenshot to disk
-//		File screenshotLocation = new File("/home/rakesh/Documents/Bug reports/Mr&Mrs/test.png");
-//		FileUtils.copyFile(screenshot, screenshotLocation);
+		File screenshotLocation = new File("/home/rakesh/Documents/"+System.currentTimeMillis());
+		FileUtils.copyFile(screenshot, screenshotLocation);
 		return screenshot;
 	}
 }
