@@ -1,6 +1,5 @@
 package extent_reports;
 
-
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -8,8 +7,6 @@ import java.util.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.Test;
-
 import com.sun.jna.NativeLibrary;
 
 import uk.co.caprica.vlcj.player.MediaPlayer;
@@ -44,7 +41,7 @@ public class ScreenRecorder {
 	}
 
 	public void startRecording(String testName) {
-		 mp4FileName = getFile(testName);
+		mp4FileName = getFile(testName);
 		logger.info("start recording, " + mp4FileName);
 		mediaPlayer.playMedia(MRL, getMediaOptions(mp4FileName));
 	}
@@ -60,7 +57,7 @@ public class ScreenRecorder {
 	}
 
 	private String getFile(String testName) {
-		File dir = new File(System.getProperty("user.dir"), "mp4Result");
+		File dir = new File(System.getProperty("user.dir") + "/test-output", "mp4Result");
 		dir.mkdirs();
 		DateFormat df = new SimpleDateFormat("yyyyMMdd-HHmmss");
 		videoName = df.format(new Date()) + ".mp4";
@@ -73,9 +70,4 @@ public class ScreenRecorder {
 				String.format(CACHING, caching) };
 	}
 
-	@Test
-	    public void remo() {
-System.out.println(getFile("raki"));	    
 }
-}
-
