@@ -7,6 +7,8 @@ import java.util.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.Test;
+
 import com.sun.jna.NativeLibrary;
 
 import uk.co.caprica.vlcj.player.MediaPlayer;
@@ -16,8 +18,8 @@ import uk.co.caprica.vlcj.runtime.RuntimeUtil;
 public class ScreenRecorder {
 	private final Logger logger = LoggerFactory.getLogger(ScreenRecorder.class);
 	private static final String[] OPTIONS = { "--quiet", "--quiet-synchro", "--intf", "dummy" };
-
-	private static final String MRL = "screen://";
+	private static final String MRL = "screen://Troop Messenger";
+	//private static final String MRL = "screen://";
 	private static final String SOUT = ":sout=#transcode{vcodec=h264,vb=%d,scale=%f}:duplicate{dst=file{dst=%s}}";
 	private static final String FPS = ":screen-fps=%d";
 	private static final String CACHING = ":screen-caching=%d";
@@ -68,6 +70,13 @@ public class ScreenRecorder {
 	private String[] getMediaOptions(String destination) {
 		return new String[] { String.format(SOUT, bits, scale, destination), String.format(FPS, fps),
 				String.format(CACHING, caching) };
+	}
+	@Test
+	public void demo() throws InterruptedException
+	{
+		startRecording("test");
+		Thread.sleep(5000);
+		stopRecording();
 	}
 
 }

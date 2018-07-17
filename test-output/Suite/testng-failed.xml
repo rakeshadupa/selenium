@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" verbose="8" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="10" verbose="8" name="Test(failed)" parallel="tests">
     <classes>
-      <class name="com.maven.sample.Practice2">
+      <class name="appium.AppiumBase">
         <methods>
-          <include name="vevo"/>
-          <include name="testSeleniumBase"/>
-          <include name="afterTest"/>
+          <include name="aTestBase"/>
         </methods>
-      </class> <!-- com.maven.sample.Practice2 -->
+      </class> <!-- appium.AppiumBase -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="10" verbose="8" name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="appium.AppiumBase2">
+        <methods>
+          <include name="aTestBase"/>
+        </methods>
+      </class> <!-- appium.AppiumBase2 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

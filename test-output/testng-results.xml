@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4865" started-at="2018-07-10T12:48:58Z" finished-at="2018-07-10T12:49:02Z">
+  <suite name="Default suite" duration-ms="177" started-at="2018-07-17T04:48:15Z" finished-at="2018-07-17T04:48:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4865" started-at="2018-07-10T12:48:58Z" finished-at="2018-07-10T12:49:02Z">
-      <class name="com.maven.sample.Practice1">
-        <test-method status="PASS" signature="testPro()[pri:0, instance:com.maven.sample.Practice1@646007f4]" name="testPro" duration-ms="4841" started-at="2018-07-10T12:48:58Z" finished-at="2018-07-10T12:49:02Z">
+    <test name="Default test" duration-ms="177" started-at="2018-07-17T04:48:15Z" finished-at="2018-07-17T04:48:16Z">
+      <class name="sikuli.SikuliUtils">
+        <test-method status="PASS" signature="pictureTest()[pri:0, instance:sikuli.SikuliUtils@646007f4]" name="pictureTest" duration-ms="148" started-at="2018-07-17T04:48:15Z" finished-at="2018-07-17T04:48:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPro -->
-      </class> <!-- com.maven.sample.Practice1 -->
+        </test-method> <!-- pictureTest -->
+      </class> <!-- sikuli.SikuliUtils -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
