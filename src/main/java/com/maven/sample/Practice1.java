@@ -6,10 +6,8 @@ import org.testng.annotations.Test;
 
 public class Practice1 {
 
-	int i = 1;
-
 	@Test
-	public void testPro() throws InterruptedException, AWTException {
-		
+	public void run(String a, int b) throws InterruptedException, AWTException {
+
 	}
 }

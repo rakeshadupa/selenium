@@ -19,8 +19,9 @@ public class UnreadMsgs extends AppiumBase {
 		List<String> l2 = new ArrayList<>();
 		int count = 0;
 		while (true) {
+			//click
 			int unreadCount = driver.findElements(By.id("com.tvisha.troopmessenger:id/unreadMesgCount")).size();/// to
-																												/// get
+			/// get
 																												/// unread
 																												/// msgs
 			System.out.println("unread count===" + unreadCount);
