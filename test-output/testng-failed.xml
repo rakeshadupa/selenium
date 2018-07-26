@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sikuli.SikuliUtils">
+      <class name="com.maven.sample.Practice1">
         <methods>
-          <include name="pictureTest"/>
+          <include name="run"/>
         </methods>
-      </class> <!-- sikuli.SikuliUtils -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

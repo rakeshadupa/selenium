@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2055" started-at="2018-07-17T07:28:17Z" finished-at="2018-07-17T07:28:19Z">
+  <suite name="Default suite" duration-ms="43" started-at="2018-07-25T07:02:19Z" finished-at="2018-07-25T07:02:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2055" started-at="2018-07-17T07:28:17Z" finished-at="2018-07-17T07:28:19Z">
+    <test name="Default test" duration-ms="43" started-at="2018-07-25T07:02:19Z" finished-at="2018-07-25T07:02:19Z">
       <class name="com.maven.sample.Practice1">
-        <test-method status="PASS" signature="testPro()[pri:0, instance:com.maven.sample.Practice1@646007f4]" name="testPro" duration-ms="2021" started-at="2018-07-17T07:28:17Z" finished-at="2018-07-17T07:28:19Z">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.maven.sample.Practice1@646007f4]" name="run" duration-ms="16" started-at="2018-07-25T07:02:19Z" finished-at="2018-07-25T07:02:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPro -->
+        </test-method> <!-- run -->
       </class> <!-- com.maven.sample.Practice1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
