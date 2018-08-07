@@ -14,11 +14,12 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class AppiumBase {
 	AndroidDriver<AndroidElement> driver;
 
-private void scroll()
-{
-//	 driver.findElementByAndroidUIAutomator(“new UiScrollable(new
-//		 UiSelector()).scrollIntoView(text(“Enter your element”))”);
-}
+	private void scroll() {
+
+		System.out.println("rakesh");
+		// driver.findElementByAndroidUIAutomator(“new UiScrollable(new
+		// UiSelector()).scrollIntoView(text(“Enter your element”))”);
+	}
 
 	@Test
 	public void aTestBase() throws Exception {
@@ -26,7 +27,7 @@ private void scroll()
 		File f = new File("src");
 		File f1 = new File(f, "troopm.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
+		// cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator");
 		// cap.setCapability(MobileCapabilityType.UDID, "emulator-5556");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
@@ -34,21 +35,24 @@ private void scroll()
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
 		cap.setCapability("appPackage", "com.tvisha.troopmessenger");
-		cap.setCapability("appActivity", "com.tvisha.troopmessenger.activity.SplashScreenActivity");
-		driver = new AndroidDriver<>(new URL("http://127.0.0.2:4723/wd/hub"), cap);
+//		cap.setCapability("appActivity", "com.tvisha.troopmessenger.activity.SplashScreenActivity");
+		cap.setCapability("appActivity", "com.tvisha.troopmessenger.activity.chat.recent.MainActivity");
+		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		// Thread.sleep(5000);
-
-		driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("testing");
-		driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("123456");
-		// driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
+		Thread.sleep(5000);
+		driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("9133559366");
+		driver.findElementById("com.tvisha.troopmessenger:id/password").sendKeys("recommend139");
+		driver.findElementById("com.tvisha.troopmessenger:id/submitImg").click();
+		Thread.sleep(40000);
+		System.out.println("Current activity==" + driver.currentActivity());
 		// driver.findElement(By.id("com.tvisha.troopmessenger:id/forgotPassword")).click();
-		// System.err.println("clicked==============");
+		// // System.err.println("clicked==============");
+		// // Thread.sleep(3000);
+		// // driver.resetApp();
+		// // driver.closeApp();
+		// // driver.findElement(By.id("com.tvisha.troopmessenger:id/send")).click();
 		// Thread.sleep(3000);
-		// driver.resetApp();
-		// driver.closeApp();
-		// driver.findElement(By.id("com.tvisha.troopmessenger:id/send")).click();
-		//
+		// driver.findElementByXPath("//android.widget.TextView[@text='SUBMIT']").click();
 		// WebElement toastView =
 		// driver.findElement(By.xpath("//android.widget.Toast[1]"));
 		// String toast=toastView.getAttribute("name");

@@ -19,11 +19,11 @@ public class UnreadMsgs extends AppiumBase {
 		List<String> l2 = new ArrayList<>();
 		int count = 0;
 		while (true) {
-			//click
+			// click
 			int unreadCount = driver.findElements(By.id("com.tvisha.troopmessenger:id/unreadMesgCount")).size();/// to
 			/// get
-																												/// unread
-																												/// msgs
+			/// unread
+			/// msgs
 			System.out.println("unread count===" + unreadCount);
 
 			List<AndroidElement> b = driver.findElements(By.id("com.tvisha.troopmessenger:id/userName"));
@@ -77,12 +77,12 @@ public class UnreadMsgs extends AppiumBase {
 
 	public void swipeVertical(AppiumDriver driver, double startPercentage, double finalPercentage,
 			double anchorPercentage, int duration) throws Exception {
-		Dimension size = driver.manage().window().getSize();
-		int anchor = (int) (size.width * anchorPercentage);
-		int startPoint = (int) (size.height * startPercentage);
-		int endPoint = (int) (size.height * finalPercentage);
-		new TouchAction(driver).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
-				.moveTo(anchor, endPoint).release().perform();
+//		Dimension size = driver.manage().window().getSize();
+//		int anchor = (int) (size.width * anchorPercentage);
+//		int startPoint = (int) (size.height * startPercentage);
+//		int endPoint = (int) (size.height * finalPercentage);
+//		new TouchAction(driver).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
+//				.moveTo(anchor, endPoint).release().perform();
 	}
 
 }

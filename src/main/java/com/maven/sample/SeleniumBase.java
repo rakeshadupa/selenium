@@ -25,7 +25,7 @@ public class SeleniumBase {
 
 		switch (browser) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			
 			//options.addArguments("disable-infobars");

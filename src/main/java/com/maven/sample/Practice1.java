@@ -1,28 +1,38 @@
 package com.maven.sample;
 
-import java.awt.AWTException;
+import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class Practice1 {
-	boolean a = true;
 
-	@Test
-	public void run() throws InterruptedException, AWTException {
+	private void login(String name, String password) {
 
-		SoftAssert s = new SoftAssert();
-		s.assertTrue(true);
-		s.assertTrue(a);
-	
-		try {
-		s.assertAll();
-		}
-		catch(AssertionError e)
-		{
-		System.err.println("extent  fail log here"); 
-		}
+		System.out.println(name);
+		System.out.println(password);
 
 	}
-}
 
+	@Test
+	public void executeLogin() {
+
+		
+		login(randomEmail(), "12356");
+		
+	}
+
+	
+	
+	public static String randomEmail() {
+		String SALTCHARS = "abcdefghijklmnopqrstuvwxyz";
+		StringBuilder salt = new StringBuilder();
+		Random rnd = new Random();
+		while (salt.length() < 10) {
+			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+			salt.append(SALTCHARS.charAt(index));
+		}
+		String saltStr = salt.toString();
+		return saltStr + "@test.in";
+	}
+}

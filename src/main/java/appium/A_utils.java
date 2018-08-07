@@ -19,9 +19,9 @@ public class A_utils {
 		Double screenHeightEnd = dimensions.getHeight() * 0.46;
 		int scrollEnd = screenHeightEnd.intValue();
 		
-		TouchAction t = new TouchAction(driver);
-		t.press(0, scrollStart).perform();
-		t.moveTo(0,scrollEnd).release().perform();
+//		TouchAction t = new TouchAction(driver);
+//		t.press(0, scrollStart).perform();
+//		t.moveTo(0,scrollEnd).release().perform();
 		
 	}
 	
