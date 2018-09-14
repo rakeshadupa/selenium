@@ -1,17 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77641" started-at="2018-08-04T05:41:52Z" finished-at="2018-08-04T05:43:09Z">
+  <suite name="Suite" duration-ms="0" started-at="2018-09-14T07:17:43Z" finished-at="2018-09-14T07:17:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77641" started-at="2018-08-04T05:41:52Z" finished-at="2018-08-04T05:43:09Z">
-      <class name="appium.AppiumBase">
-        <test-method status="PASS" signature="aTestBase()[pri:0, instance:appium.AppiumBase@7e0e6aa2]" name="aTestBase" duration-ms="77608" started-at="2018-08-04T05:41:52Z" finished-at="2018-08-04T05:43:09Z">
+  </suite> <!-- Suite -->
+  <suite name="Suite (1)" duration-ms="15795" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15795" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:42Z">
+      <class name="extent_reports.Demo3">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:extent_reports.Demo3@1068e947]" name="beforeClass" is-config="true" duration-ms="3451" started-at="2018-09-14T07:17:32Z" finished-at="2018-09-14T07:17:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTestBase -->
-      </class> <!-- appium.AppiumBase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testDemo1()[pri:0, instance:extent_reports.Demo3@1068e947]" name="testDemo1" duration-ms="6548" started-at="2018-09-14T07:17:36Z" finished-at="2018-09-14T07:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemo1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:extent_reports.Demo3@1068e947]" name="getResult" is-config="true" duration-ms="1" started-at="2018-09-14T07:17:42Z" finished-at="2018-09-14T07:17:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDemo1 status=SUCCESS method=Demo3.testDemo1()[pri:0, instance:extent_reports.Demo3@1068e947] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- extent_reports.Demo3 -->
+      <class name="extent_reports.Demo4">
+        <test-method status="PASS" signature="reportsRe()[pri:0, instance:extent_reports.Demo4@2f8f5f62]" name="reportsRe" is-config="true" duration-ms="72" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsRe -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:extent_reports.Demo4@2f8f5f62]" name="beforeClass" is-config="true" duration-ms="3435" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testDemo1()[pri:0, instance:extent_reports.Demo4@2f8f5f62]" name="testDemo1" duration-ms="2208" started-at="2018-09-14T07:17:30Z" finished-at="2018-09-14T07:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemo1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:extent_reports.Demo4@2f8f5f62]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-14T07:17:32Z" finished-at="2018-09-14T07:17:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDemo1 status=SUCCESS method=Demo4.testDemo1()[pri:0, instance:extent_reports.Demo4@2f8f5f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:extent_reports.Demo4@2f8f5f62]" name="endReport" is-config="true" duration-ms="144" started-at="2018-09-14T07:17:42Z" finished-at="2018-09-14T07:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- extent_reports.Demo4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite name="Suite (0)" duration-ms="17058" started-at="2018-09-14T07:17:09Z" finished-at="2018-09-14T07:17:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17058" started-at="2018-09-14T07:17:09Z" finished-at="2018-09-14T07:17:26Z">
+      <class name="extent_reports.Demo1">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:extent_reports.Demo1@27d415d9]" name="beforeClass" is-config="true" duration-ms="3463" started-at="2018-09-14T07:17:16Z" finished-at="2018-09-14T07:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testDemo1()[pri:0, instance:extent_reports.Demo1@27d415d9]" name="testDemo1" duration-ms="6307" started-at="2018-09-14T07:17:19Z" finished-at="2018-09-14T07:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemo1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:extent_reports.Demo1@27d415d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDemo1 status=SUCCESS method=Demo1.testDemo1()[pri:0, instance:extent_reports.Demo1@27d415d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- extent_reports.Demo1 -->
+      <class name="extent_reports.Demo2">
+        <test-method status="PASS" signature="reportsRe()[pri:0, instance:extent_reports.Demo2@fcd6521]" name="reportsRe" is-config="true" duration-ms="651" started-at="2018-09-14T07:17:09Z" finished-at="2018-09-14T07:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsRe -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:extent_reports.Demo2@fcd6521]" name="beforeClass" is-config="true" duration-ms="4987" started-at="2018-09-14T07:17:09Z" finished-at="2018-09-14T07:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testDemo1()[pri:0, instance:extent_reports.Demo2@fcd6521]" name="testDemo1" duration-ms="1666" started-at="2018-09-14T07:17:14Z" finished-at="2018-09-14T07:17:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemo1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:extent_reports.Demo2@fcd6521]" name="getResult" is-config="true" duration-ms="17" started-at="2018-09-14T07:17:16Z" finished-at="2018-09-14T07:17:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDemo1 status=SUCCESS method=Demo2.testDemo1()[pri:0, instance:extent_reports.Demo2@fcd6521] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:extent_reports.Demo2@fcd6521]" name="endReport" is-config="true" duration-ms="561" started-at="2018-09-14T07:17:26Z" finished-at="2018-09-14T07:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- extent_reports.Demo2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
 </testng-results>

@@ -1,38 +1,16 @@
 package com.maven.sample;
 
-import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Practice1 {
-
-	private void login(String name, String password) {
-
-		System.out.println(name);
-		System.out.println(password);
-
-	}
-
+public class Practice1 extends SeleniumBase {
 	@Test
-	public void executeLogin() {
+	public void testDemo() {
 
 		
-		login(randomEmail(), "12356");
 		
-	}
-
-	
-	
-	public static String randomEmail() {
-		String SALTCHARS = "abcdefghijklmnopqrstuvwxyz";
-		StringBuilder salt = new StringBuilder();
-		Random rnd = new Random();
-		while (salt.length() < 10) {
-			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-			salt.append(SALTCHARS.charAt(index));
-		}
-		String saltStr = salt.toString();
-		return saltStr + "@test.in";
+		driver.get("https://www.troopcrm.com");
+		driver.findElement(By.id("username")).sendKeys("123456");
+		System.err.println("text"+driver.findElement(By.id("username")).getAttribute("value"));
 	}
 }

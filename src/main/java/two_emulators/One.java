@@ -6,10 +6,12 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -20,9 +22,9 @@ public class One implements Runnable {
 	public void run() {
 		AndroidDriver<WebElement> driver;
 		File f = new File("src");
-		File f1 = new File(f, "troop.apk");
+		File f1 = new File(f, "troopm.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "pixel6");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "e1");
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
 		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());

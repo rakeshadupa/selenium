@@ -3,18 +3,13 @@ package com.maven.sample;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 public class SeleniumBase {
 	public  WebDriver  driver=null;
@@ -59,7 +54,7 @@ public class SeleniumBase {
 
 	}
 
-	@AfterClass
+//	@AfterClass
 	public void afterTest() {
 		try {
 			Thread.sleep(3000);

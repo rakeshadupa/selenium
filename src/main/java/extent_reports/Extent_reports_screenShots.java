@@ -1,6 +1,4 @@
-package extent_reports;
-
-import static org.testng.Assert.assertEquals;
+/*package extent_reports;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,7 +7,6 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -34,9 +31,9 @@ public class Extent_reports_screenShots {
 	@BeforeTest
 	public void setExtent() {
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReporterWithScreenshots.html", true);
-	/*	extent.addSystemInfo("Host Name", "rakesh tvisha");
+		extent.addSystemInfo("Host Name", "rakesh tvisha");
 		extent.addSystemInfo("User Name", "rakesh adupa");
-		extent.addSystemInfo("Environment", "QA");*/
+		extent.addSystemInfo("Environment", "QA");
 
 	}
 
@@ -82,7 +79,7 @@ public class Extent_reports_screenShots {
 		extentTest.log(LogStatus.INFO, "this is the log status==========================");
 
 	}
-	/*
+	
 	@Test
 	public void freemCRMLogoTest() throws InterruptedException {
 		extentTest = extent.startTest("freemCRMLogoTest");
@@ -92,7 +89,7 @@ public class Extent_reports_screenShots {
 		assertEquals("Sugar Fre Trial | SugarCRM", driver.getTitle(),"not matched");
 		
 	
-	}*/
+	}
 
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {
@@ -119,4 +116,4 @@ public class Extent_reports_screenShots {
 		driver.quit();
 	}
 
-}
+}*/

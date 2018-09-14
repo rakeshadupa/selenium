@@ -22,7 +22,7 @@ public class Two implements Runnable {
 	public void run() {
 
 		File f = new File("src");
-		File f1 = new File(f, "troop.apk");
+		File f1 = new File(f, "troopm.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "pixel6");
 		cap.setCapability("unicodeKeyboard", true);
@@ -33,7 +33,7 @@ public class Two implements Runnable {
 		cap.setCapability(MobileCapabilityType.UDID, "emulator-5554");
 		try {
 
-			driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:5000/wd/hub"), cap);
+			driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4726/wd/hub"), cap);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 			driver.findElementById("com.tvisha.troopmessenger:id/userId").sendKeys("reciever username");
