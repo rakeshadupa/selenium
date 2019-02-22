@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65" started-at="2018-09-14T12:06:08Z" finished-at="2018-09-14T12:06:08Z">
+  <suite name="Default suite" duration-ms="1476" started-at="2019-02-22T12:25:43Z" finished-at="2019-02-22T12:25:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65" started-at="2018-09-14T12:06:08Z" finished-at="2018-09-14T12:06:08Z">
-      <class name="com.maven.sample.Practice1">
-        <test-method status="PASS" signature="testDemo()[pri:0, instance:com.maven.sample.Practice1@3578436e]" name="testDemo" duration-ms="18" started-at="2018-09-14T12:06:08Z" finished-at="2018-09-14T12:06:08Z">
+    <test name="Default test" duration-ms="1476" started-at="2019-02-22T12:25:43Z" finished-at="2019-02-22T12:25:44Z">
+      <class name="googlesheets.GSheetTest">
+        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="16" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{blowout=blowout service, haircut=hair service}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDemo -->
-      </class> <!-- com.maven.sample.Practice1 -->
+        </test-method> <!-- testM -->
+        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="15" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{blowout=h, haircut=t}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testM -->
+        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="0" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{blowout=rakesh, haircut=test}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testM -->
+      </class> <!-- googlesheets.GSheetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

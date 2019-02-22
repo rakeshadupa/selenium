@@ -17,20 +17,17 @@ import org.testng.annotations.Test;
 public class HashTable_Test {
 	@Test(dataProvider = "test")
 	public void demo(HashMap<String, String> d) {
-		if (d.get("Runmode").equals("yes")) {
 			
 	
-		System.out.println(d.get("a"));
-		System.out.println(d.get("b"));
-		}
+		System.out.println(d.get("Status"));
 	}
 
 	@DataProvider(name = "test")
-	public static Object[][] getData(String path, String sheetName) throws
-	IOException {
-	//public static Object[][] getData() throws IOException {
+//	public static Object[][] getData(String path, String sheetName) throws
+//	IOException {
+	public static Object[][] getData() throws IOException {
 
-		File f = new File("/home/rakesh/Downloads/urban_clap.xlsx");
+		File f = new File("D:\\Rakesh\\Documents\\eclipseworkspace\\Appium\\sample_maven_project\\src\\excelreport.xlsx");
 		// File f = new File(path);
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = null;
@@ -39,7 +36,7 @@ public class HashTable_Test {
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
-		Sheet s = w.getSheet("category");
+		Sheet s = w.getSheet("test");
 		int rowCount = s.getLastRowNum();
 		int colCount = s.getRow(0).getLastCellNum();
 		System.out.println("rows>>>>>>>" + rowCount);
