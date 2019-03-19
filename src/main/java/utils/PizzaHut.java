@@ -7,9 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.maven.sample.SeleniumBase;
+import com.maven.sample.SeleniumBase_old;
 
-public class PizzaHut extends SeleniumBase {
+public class PizzaHut extends SeleniumBase_old {
 	Select s;
 
 	@Test

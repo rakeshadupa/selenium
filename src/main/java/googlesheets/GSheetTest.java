@@ -19,26 +19,14 @@ public class GSheetTest extends GoogleSheetAPI {
 		System.err.println();
 
 		List<Object> firstRowList = sheetData.get(0);
-
-		/*
-		 * for (Object object : firstRowList) { if (object.equals("blowout")) {
-		 * 
-		 * 
-		 * System.err.println("done"); } }
-		 */
 		Object[][] obj = new Object[sheetData.size()-1][1];
 		Map<String, String> data = null;
 		for (int i = 1; i < sheetData.size(); i++) {
 			data = new HashMap<>();
 			for (int j = 0; j < firstRowList.size(); j++) {
 
-				DataFormatter df = new DataFormatter();
-				// String key = df.formatCellValue(s.getRow(0).getCell(j));
-				// String value = df.formatCellValue(s.getRow(i).getCell(j));
 				String key = (String) firstRowList.get(j);
-				// System.out.println(key);
 				String value = (String) sheetData.get(i).get(j);
-				// System.out.println(value);
 				data.put(key, value);
 				
 

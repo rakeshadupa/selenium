@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Goibibo extends SeleniumBase {
+public class Goibibo extends SeleniumBase_old {
 	boolean status=true;
 	@Test
 	public void testGoibibo() throws InterruptedException, AWTException {

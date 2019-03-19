@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class Date extends SeleniumBase {
+public class Date extends SeleniumBase_old {
 	 int targetDay = 4, targetMonth = 6, targetYear = 1993;
 
 	 int currenttDate = 0, currenttMonth = 0, currenttYear = 0;

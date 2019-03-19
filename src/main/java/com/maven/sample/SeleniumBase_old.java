@@ -6,30 +6,33 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class SeleniumBase {
-	public WebDriver driver = null;
+public class SeleniumBase_old {
+	public  WebDriver  driver=null;
 
 	String browser = "chrome";
-
 	@BeforeClass
-	public void testSeleniumBase() throws InterruptedException, IOException {
+	public void testSeleniumBase( ) throws InterruptedException, IOException {
 
 		switch (browser) {
 		case "chrome":
-
-			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			
+			//options.addArguments("disable-infobars");
+			// options.addArguments("start-maximized");
+			//options.addArguments("--ignore-certificate-errors");
+			//options.addArguments("--disable-popup-blocking");
+			// options.addArguments("--incognito");
+			driver = new ChromeDriver(options);
 
 			break;
-
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/geckodriver");
+//			FirefoxProfile profile = new FirefoxProfile();
+//			driver = new FirefoxDriver();
+
 			break;
 		default:
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");
@@ -42,12 +45,13 @@ public class SeleniumBase {
 		 * driver = e_driver;
 		 */
 
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 
 	}
 
-	// @AfterClass
+//	@AfterClass
 	public void afterTest() {
 		try {
 			Thread.sleep(3000);

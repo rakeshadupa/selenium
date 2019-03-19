@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import com.maven.sample.SeleniumBase;
+import com.maven.sample.SeleniumBase_old;
 
-public class ResetPWDEmail extends SeleniumBase {
+public class ResetPWDEmail extends SeleniumBase_old {
 	String email = "trueconnect.matrimony@gmail.com";
 
 	@Test

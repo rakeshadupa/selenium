@@ -17,9 +17,10 @@
 
 	<dependencies>
 <dependency>
-   <groupId>io.github.bonigarcia</groupId>
-   <artifactId>webdrivermanager</artifactId>
-    <version>2.2.4</version>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.3.0</version>
+    <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 <dependency>
@@ -60,7 +61,7 @@
 			<version>3.1.5</version>
 		</dependency>
 
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.bytedeco.javacpp-presets</groupId>
 			<artifactId>tesseract</artifactId>
 			<version>3.04-1.1</version>
@@ -71,7 +72,7 @@
 			<artifactId>tess4j</artifactId>
 			<version>3.5.1</version>
 		</dependency>
-
+ -->
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>

@@ -1,46 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1476" started-at="2019-02-22T12:25:43Z" finished-at="2019-02-22T12:25:44Z">
+  <suite name="Default suite" duration-ms="13402" started-at="2019-03-19T10:03:54Z" finished-at="2019-03-19T10:04:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1476" started-at="2019-02-22T12:25:43Z" finished-at="2019-02-22T12:25:44Z">
-      <class name="googlesheets.GSheetTest">
-        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="16" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{blowout=blowout service, haircut=hair service}]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="13402" started-at="2019-03-19T10:03:54Z" finished-at="2019-03-19T10:04:07Z">
+      <class name="com.maven.sample.Practice1">
+        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice1@783e6358]" name="testSeleniumBase" is-config="true" duration-ms="4531" started-at="2019-03-19T15:33:54Z" finished-at="2019-03-19T15:33:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testM -->
-        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="15" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{blowout=h, haircut=t}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testSeleniumBase -->
+        <test-method status="PASS" signature="installapp()[pri:0, instance:com.maven.sample.Practice1@783e6358]" name="installapp" duration-ms="8847" started-at="2019-03-19T15:33:58Z" finished-at="2019-03-19T15:34:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testM -->
-        <test-method status="PASS" signature="testM(java.util.HashMap)[pri:0, instance:googlesheets.GSheetTest@1198b989]" name="testM" duration-ms="0" started-at="2019-02-22T12:25:44Z" data-provider="data" finished-at="2019-02-22T12:25:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{blowout=rakesh, haircut=test}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testM -->
-      </class> <!-- googlesheets.GSheetTest -->
+        </test-method> <!-- installapp -->
+      </class> <!-- com.maven.sample.Practice1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

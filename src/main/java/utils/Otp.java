@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.maven.sample.SeleniumBase;
+import com.maven.sample.SeleniumBase_old;
 
-public class Otp extends SeleniumBase {
+public class Otp extends SeleniumBase_old {
 	private static List<WebElement> listOfColoumns;
 	private static int coloumnsSize;
 

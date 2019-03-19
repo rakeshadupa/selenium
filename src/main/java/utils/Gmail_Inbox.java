@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 
-import com.maven.sample.SeleniumBase;
+import com.maven.sample.SeleniumBase_old;
 
-public class Gmail_Inbox extends SeleniumBase {
+public class Gmail_Inbox extends SeleniumBase_old {
 
 	public void deleteInbox(String email, String password, int tabIndex) throws InterruptedException {
 		driver.get(
