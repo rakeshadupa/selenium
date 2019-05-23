@@ -1,7 +1,7 @@
 package com.maven.sample;
 
 public class MySingleTon   {
-/*	public static MySingleTon instance;
+	public static MySingleTon instance;
 
 	private MySingleTon() {
 
@@ -22,7 +22,7 @@ System.out.println("singleton class working fine=============");
 	public static void main(String[] args) {
 		MySingleTon obj=MySingleTon.getInstance();
 		obj.demo();
-	}*/
+	}
 
 	
 	

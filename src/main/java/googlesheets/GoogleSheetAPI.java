@@ -61,7 +61,7 @@ public class GoogleSheetAPI {
      * @throws IOException
      */
     public static Credential authorize() throws IOException {
-        // Load client secrets.
+        // Load client secrets.	
 //        InputStream in =
 //        GoogleSheetAPI.class.getResourceAsStream("/client_secret.json");
         

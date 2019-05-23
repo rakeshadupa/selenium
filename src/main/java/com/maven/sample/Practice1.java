@@ -1,38 +1,27 @@
 package com.maven.sample;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 
-public class Practice1 extends SeleniumBase {
-
+public class Practice1 {
 	@Test
+	void test() {
 
-	public void installapp() throws InterruptedException, IOException, AWTException {
+		String[][] a = new String[2][3];
 		
-
-		driver.get("http://dev.mrmsbeautysalon.com");
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_ALT);
-		r.keyPress(KeyEvent.VK_SPACE);
-		r.keyRelease(KeyEvent.VK_ALT);
-		r.keyRelease(KeyEvent.VK_SPACE);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_N);
-		r.keyRelease(KeyEvent.VK_N);
 		
-		File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(f, new File("D:\\Rakesh\\test.png"));
-		driver.close();
+		a[0][0]="a";
+		a[0][1]="b";
+		a[0][2]="b";
 		
+		a[1][0]="a";
+		a[1][1]="a";
+		a[1][2]="b";
+		System.out.println(a[0].length);
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[0].length; j++) {
+				System.out.println(a[i][j]);
+			}
+		}
 
 	}
-
 }

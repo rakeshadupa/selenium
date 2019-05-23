@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13402" started-at="2019-03-19T10:03:54Z" finished-at="2019-03-19T10:04:07Z">
+  <suite name="Default suite" duration-ms="54444" started-at="2019-05-22T12:51:05Z" finished-at="2019-05-22T12:51:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13402" started-at="2019-03-19T10:03:54Z" finished-at="2019-03-19T10:04:07Z">
-      <class name="com.maven.sample.Practice1">
-        <test-method status="PASS" signature="testSeleniumBase()[pri:0, instance:com.maven.sample.Practice1@783e6358]" name="testSeleniumBase" is-config="true" duration-ms="4531" started-at="2019-03-19T15:33:54Z" finished-at="2019-03-19T15:33:58Z">
+    <test name="Default test" duration-ms="54444" started-at="2019-05-22T12:51:05Z" finished-at="2019-05-22T12:51:59Z">
+      <class name="appium.AppiumPractice">
+        <test-method status="PASS" signature="aTestBase()[pri:0, instance:appium.AppiumPractice@1e67b872]" name="aTestBase" is-config="true" duration-ms="54413" started-at="2019-05-22T18:21:05Z" finished-at="2019-05-22T18:21:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSeleniumBase -->
-        <test-method status="PASS" signature="installapp()[pri:0, instance:com.maven.sample.Practice1@783e6358]" name="installapp" duration-ms="8847" started-at="2019-03-19T15:33:58Z" finished-at="2019-03-19T15:34:07Z">
+        </test-method> <!-- aTestBase -->
+        <test-method status="PASS" signature="practice()[pri:0, instance:appium.AppiumPractice@1e67b872]" name="practice" duration-ms="8" started-at="2019-05-22T18:21:59Z" finished-at="2019-05-22T18:21:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- installapp -->
-      </class> <!-- com.maven.sample.Practice1 -->
+        </test-method> <!-- practice -->
+      </class> <!-- appium.AppiumPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

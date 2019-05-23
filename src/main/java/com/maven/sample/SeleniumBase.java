@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -24,12 +23,13 @@ public class SeleniumBase {
 
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
+			driver.manage().window().maximize();
 
 			break;
 
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+//			driver=new FirefoxDriver();
 			break;
 		default:
 			System.err.println("<<<<<<<<<<<You have set wrong browser name>>>>>>>>>>>>>>>>>>>");

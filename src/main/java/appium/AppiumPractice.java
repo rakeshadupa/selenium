@@ -20,32 +20,6 @@ public class AppiumPractice extends AppiumBase
 @Test
 public void practice() throws InterruptedException
 	{
-	
-	/*driver.openNotifications();
-	//driver.sendSMS("9133559366", "hello this is appium");
-	
-	
-		 driver.openNotifications();
-		    List<AndroidElement> allnotifications=driver.findElements(By.id("android:id/title"));
-
-		    for (WebElement webElement : allnotifications) {
-		        System.out.println(webElement.getText());
-		        if(webElement.getText().contains("something")){
-		            System.out.println("Notification found");
-		            break;
-		        }
-		    }*/
-
-	//driver.startRecordingScreen();
-	ScreenRecordingUploadOptions cr=new ScreenRecordingUploadOptions();
-	cr.withRemotePath("");
-	
-	
-//	driver.startRecordingScreen(new BaseStartScreenRecordingOptions<BaseStartScreenRecordingOptions<T>>().withUploadOptions(cr) {
-//	})
-
-
-
 
 
 

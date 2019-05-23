@@ -14,6 +14,7 @@ public class SaveCookies {
 	{
 
 		File file = new File(filePath);
+		
 		try { // Delete if any old file exists
 			file.delete();
 			file.createNewFile();
