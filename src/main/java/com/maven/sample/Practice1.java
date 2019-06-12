@@ -1,27 +1,37 @@
 package com.maven.sample;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Practice1 {
-	@Test
-	void test() {
+	static Cell Login;
+	static Cell Password; 
+	WebDriver driver;
+@Test	
+	public  void df() throws EncryptedDocumentException, InvalidFormatException, IOException
+	{
+	
 
-		String[][] a = new String[2][3];
-		
-		
-		a[0][0]="a";
-		a[0][1]="b";
-		a[0][2]="b";
-		
-		a[1][0]="a";
-		a[1][1]="a";
-		a[1][2]="b";
-		System.out.println(a[0].length);
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a[0].length; j++) {
-				System.out.println(a[i][j]);
-			}
-		}
 
+	
+	
+	
+	
 	}
 }

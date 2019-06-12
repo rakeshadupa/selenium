@@ -18,35 +18,31 @@ import io.appium.java_client.touch.offset.PointOption;
 public class AppiumBase {
 	AndroidDriver<AndroidElement> driver;
 
-	private void scroll() {
 
-		System.out.println("rakesh");
-		// driver.findElementByAndroidUIAutomator(“new UiScrollable(new
-		// UiSelector()).scrollIntoView(text(“Enter your element”))”);
-	}
 
 	@BeforeTest
 	public void aTestBase() throws Exception {
 
 		File f = new File("src");
-		File f1 = new File(f, "provider_local.apk");
+		File f1 = new File(f, "provider.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
+//		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator");
 		// cap.setCapability(MobileCapabilityType.UDID, "emulator-5556");
-		// cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+		 cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		cap.setCapability("autoGrantPermissions", true);
 		cap.setCapability("unicodeKeyboard", true);
 		cap.setCapability("resetKeyboard", true);
 
-		cap.setCapability("fullReset", false);
+//		cap.setCapability("fullReset", false);
 		// cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "240");
 
-//		cap.setCapability("appPackage", "com.tvisha.mrandmrs");
+		cap.setCapability("appPackage", "com.tvisha.mrmrsprovider");
 //		cap.setCapability("appActivity", "com.tvisha.mrandmrs.screens.registration.RegMobileActivity");
 		// cap.setCapability("appActivity",
 		// "com.tvisha.troopmessenger.activity.login.login.LoginActivity");
 		cap.setCapability("appActivity", "com.tvisha.mrmrsprovider.ui.registration.common.SplashActivity");
+		
 
 
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
@@ -108,6 +104,7 @@ public class AppiumBase {
 
 		// SikuliUtils.compareImageInSikuli("/home/rakesh/Documents/Bug
 		// reports/Mr&Mrs/test.png", a.getAbsolutePath());
+		
 
 	}
 

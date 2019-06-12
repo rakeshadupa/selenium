@@ -31,7 +31,12 @@ public class A_utils {
 //		t.moveTo(0,scrollEnd).release().perform();
 		
 	}
-	
+	private void scroll() {
+
+		System.out.println("rakesh");
+		// driver.findElementByAndroidUIAutomator(“new UiScrollable(new
+		// UiSelector()).scrollIntoView(text(“Enter your element”))”);
+	}
 	public static String getToast(WebDriver driver)
 	{
 		WebElement toastView = driver.findElement(By.xpath("//android.widget.Toast[1]"));
