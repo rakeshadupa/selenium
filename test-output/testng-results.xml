@@ -1,60 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15315" started-at="2019-06-04T07:28:47Z" finished-at="2019-06-04T07:29:02Z">
+  <suite name="Default suite" duration-ms="21526" started-at="2019-06-27T07:28:23Z" finished-at="2019-06-27T07:28:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15315" started-at="2019-06-04T07:28:47Z" finished-at="2019-06-04T07:29:02Z">
-      <class name="com.maven.sample.Practice1">
-        <test-method status="FAIL" signature="df()[pri:0, instance:com.maven.sample.Practice1@735f7ae5]" name="df" duration-ms="15207" started-at="2019-06-04T12:58:47Z" finished-at="2019-06-04T12:59:02Z">
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problems: 
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-	driver cannot be resolved
-	driver cannot be resolved
-	driver cannot be resolved
-
-	at com.maven.sample.Practice1.ReadData(Practice1.java:48)
-	at com.maven.sample.Practice1.df(Practice1.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+    <test name="Default test" duration-ms="21526" started-at="2019-06-27T07:28:23Z" finished-at="2019-06-27T07:28:45Z">
+      <class name="com.maven.sample.Practice3">
+        <test-method status="PASS" signature="a()[pri:1, instance:com.maven.sample.Practice3@73f792cf]" name="a" duration-ms="21490" started-at="2019-06-27T12:58:23Z" finished-at="2019-06-27T12:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- df -->
-      </class> <!-- com.maven.sample.Practice1 -->
+        </test-method> <!-- a -->
+      </class> <!-- com.maven.sample.Practice3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

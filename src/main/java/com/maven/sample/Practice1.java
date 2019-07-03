@@ -19,16 +19,13 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Practice1 {
-	static Cell Login;
-	static Cell Password; 
-	WebDriver driver;
-@Test	
-	public  void df() throws EncryptedDocumentException, InvalidFormatException, IOException
+public class Practice1 extends Practice3 {
+	@Test(priority=2)
+	public  void b() throws EncryptedDocumentException, InvalidFormatException, IOException
 	{
-	
+		System.out.println(driver+"in second class");
 
-
+		driver.get("http://192.168.2.37/development/mr_miss/public");
 	
 	
 	

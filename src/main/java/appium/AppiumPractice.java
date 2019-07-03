@@ -35,11 +35,14 @@ public void testt() throws MalformedURLException
 	driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //	driver.findElement(By.id("com.tvisha.mrmrsprovider:id/tv_stylist")).click();
-//	driver.findElement(By.id("com.tvisha.mrmrsprovider:id/tv_skip")).click();
+//	driver.findElement(By.id("com.tvisha.mrmrsprovider:id/tv_skip"r)).click();
 	driver.findElement(By.xpath("//android.widget.TextView[@text='Stylist']")).click();
 	driver.findElement(By.xpath("//android.widget.TextView[@text='Skip']")).click();
 	MobileElement ele = driver.findElement(By.id("com.tvisha.mrmrsprovider:id/et_phone"));
 	ele.sendKeys("123456789");
 	System.exit(0);
+
+	driver.findElementByXPath("//android.widget.TextView[@text='India']").click();
+
 }
 }

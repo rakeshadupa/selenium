@@ -12,14 +12,35 @@ import org.testng.annotations.Test;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
 
-public class Apractice extends AppiumBase {
+public class Apractice {
+	public static int getSecondLargest(int[] a, int total){  
+		int temp;  
+		for (int i = 0; i < total; i++)   
+		        {  
+		            for (int j = i + 1; j < total; j++)   
+		            {  
+		                if (a[i] > a[j])   
+		                {  
+		                    temp = a[i];  
+		                    a[i] = a[j];  
+		                    a[j] = temp;  
+		                }  
+		            }  
 
-	@Test
-	private void testApractice() throws InterruptedException, IOException {
-	
-
-
-
-	}
+		        for (int z : a) {
+					System.out.print(z);
+					System.out.print(',');
+					System.out.println("");
+					
+				}
+		        }  
+		       return a[total-2];  
+		}  
+		public static void main(String args[]){  
+		int a[]={1,2,5,6,3,2};  
+//		int b[]={44,66,99,77,33,22,55};  
+		System.out.println("Second Largest: "+getSecondLargest(a,6));  
+//		System.out.println("Second Largest: "+getSecondLargest(b,7));  
+		}
 
 }
