@@ -64,6 +64,7 @@ public class A_utils {
 		// Get start and end coordinates for horizontal swipe
 		int startX = Math.toIntExact(Math.round(screenSize.getWidth() * 0.8));
 		int endX = 0;
+		
 
 		TouchAction action = new TouchAction(driver);
 		action

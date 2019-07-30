@@ -7,5 +7,6 @@ public class Mobile_ScreenRecord extends AppiumBase {
 	{
 
 	}
+	
 
 }
