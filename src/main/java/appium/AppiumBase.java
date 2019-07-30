@@ -4,14 +4,21 @@ import java.io.File;
 import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -20,13 +27,13 @@ public class AppiumBase {
 
 
 
-	@BeforeTest
+	@Test
 	public void aTestBase() throws Exception {
 
 		File f = new File("src");
 		File f1 = new File(f, "provider.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
-//		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
+		cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator");
 		// cap.setCapability(MobileCapabilityType.UDID, "emulator-5556");
 		 cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
@@ -57,6 +64,26 @@ public class AppiumBase {
 		Thread.sleep(2000);
 
 		T.tap(PointOption.point(ele.getLocation().x + 30, ele.getLocation().y - 30)).perform();
+		
+		TouchActions t=new TouchActions(driver);
+		t.flick(ele, 20, 30, 20);
+		
+		  WebElement banner = driver.findElement(By.xpath(""));
+		    Point bannerPoint = banner.getLocation();
+		    // Get size of device screen
+		    Dimension screenSize = driver.manage().window().getSize();
+		    // Get start and end coordinates for horizontal swipe
+		    int startX = Math.toIntExact(Math.round(screenSize.getWidth() * 0.8));
+		    int endX = 0;
+
+		    TouchAction action = new TouchAction(driver);
+		    action
+		            .press(PointOption.point(startX, bannerPoint.getY()))
+		            .waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+		            .moveTo(PointOption.point(endX, bannerPoint.getY()))
+		            .release();
+		    driver.performTouchAction(action);
+
 
 		// Thread.sleep(5000);
 		// driver.setClipboardText("123456789");

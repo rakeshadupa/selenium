@@ -21,28 +21,29 @@ public void testt() throws MalformedURLException
 	AndroidDriver<MobileElement> driver;
 
 	File f = new File("src");
-	File f1 = new File(f, "provider.apk");
+	File f1 = new File(f, "customer.apk");
 	DesiredCapabilities cap = new DesiredCapabilities();
 //	cap.setCapability(MobileCapabilityType.APP, "D:\\Rakesh\\Documents\\eclipseworkspace\\selenium_scripts\\Version_Project\\src\\provider.apk");
+	cap.setCapability(MobileCapabilityType.APP, f1.getAbsolutePath());
 	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator");
 	cap.setCapability("autoGrantPermissions", true);
 	cap.setCapability("unicodeKeyboard", true);
 	cap.setCapability("resetKeyboard", true);
 	cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-	cap.setCapability("appPackage", "com.tvisha.mrmrsprovider");
-	cap.setCapability("appActivity", "com.tvisha.mrmrsprovider.ui.registration.common.SplashActivity");
+//	cap.setCapability("appPackage", "com.tvisha.mrmrsprovider");
+//	cap.setCapability("appActivity", "com.tvisha.mrmrsprovider.ui.registration.common.SplashActivity");
 
 	driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //	driver.findElement(By.id("com.tvisha.mrmrsprovider:id/tv_stylist")).click();
 //	driver.findElement(By.id("com.tvisha.mrmrsprovider:id/tv_skip"r)).click();
-	driver.findElement(By.xpath("//android.widget.TextView[@text='Stylist']")).click();
-	driver.findElement(By.xpath("//android.widget.TextView[@text='Skip']")).click();
-	MobileElement ele = driver.findElement(By.id("com.tvisha.mrmrsprovider:id/et_phone"));
-	ele.sendKeys("123456789");
-	System.exit(0);
-
-	driver.findElementByXPath("//android.widget.TextView[@text='India']").click();
+//	driver.findElement(By.xpath("//android.widget.TextView[@text='Stylist']")).click();
+//	driver.findElement(By.xpath("//android.widget.TextView[@text='Skip']")).click();
+//	MobileElement ele = driver.findElement(By.id("com.tvisha.mrmrsprovider:id/et_phone"));
+//	ele.sendKeys("123456789");
+//	System.exit(0);
+//
+//	driver.findElementByXPath("//android.widget.TextView[@text='India']").click();
 
 }
 }

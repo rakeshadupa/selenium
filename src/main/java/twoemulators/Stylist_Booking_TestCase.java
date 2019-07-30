@@ -1,7 +1,5 @@
 package twoemulators;
 
-import org.testng.annotations.Test;
-
 public class Stylist_Booking_TestCase {
 
 	public static void main(String[] args) {

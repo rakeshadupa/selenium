@@ -18,13 +18,5 @@ public class Practice3 {
 	void a() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.biba.in/");
-		WebElement mix = driver.findElement(By.xpath("//span[text()='Mix & Match']"));
-		Actions a = new Actions(driver);
-		a.moveToElement(mix).perform();
 
-		driver.findElement(By.xpath("(//a[text()='Kurtis'])[2]")).click();
-	}
-
-}
+}}

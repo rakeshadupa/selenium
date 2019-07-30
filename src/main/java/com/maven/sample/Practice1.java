@@ -1,34 +1,35 @@
 package com.maven.sample;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import java.util.Random;
 
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+public class Practice1   {
+	// @Test
+	public  String randomNumber() {
+		String SALTCHARS = "1234567890";
+		StringBuilder salt = new StringBuilder();
+		Random rnd = new Random();
+		while (salt.length() < 9) {
+			System.out.println(salt.length());
+			System.out.println(rnd.nextFloat());
+			System.out.println(SALTCHARS.length());
+			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+//			int index = rnd.nextInt() * SALTCHARS.length();
+			
+			salt.append(SALTCHARS.charAt(index));
+			System.out.println(salt);
+		}
+		String saltStr = salt.toString();
+		return "9" + saltStr;
+	}
+	
+	@Test
+	private void rakesh() {
+		
 
-public class Practice1 extends Practice3 {
-	@Test(priority=2)
-	public  void b() throws EncryptedDocumentException, InvalidFormatException, IOException
-	{
-		System.out.println(driver+"in second class");
-
-		driver.get("http://192.168.2.37/development/mr_miss/public");
-	
-	
-	
-	
+		System.out.println(randomNumber());
+		
 	}
 }
