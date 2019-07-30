@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -13,6 +14,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -53,5 +55,22 @@ public class A_utils {
 		Thread.sleep(1000);
 
 		T.tap(PointOption.point(ele.getLocation().x + 30, ele.getLocation().y - 30)).perform();
+	}
+	public void androidFlick(AndroidDriver<MobileElement> driver,WebElement element)
+	{
+		Point bannerPoint = element.getLocation();
+		// Get size of device screen
+		Dimension screenSize = driver.manage().window().getSize();
+		// Get start and end coordinates for horizontal swipe
+		int startX = Math.toIntExact(Math.round(screenSize.getWidth() * 0.8));
+		int endX = 0;
+
+		TouchAction action = new TouchAction(driver);
+		action
+		.press(PointOption.point(startX, bannerPoint.getY()))
+		.waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+		.moveTo(PointOption.point(endX, bannerPoint.getY()))
+		.release();
+		driver.performTouchAction(action);
 	}
 }
