@@ -1,35 +1,22 @@
 package com.maven.sample;
 
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class Practice1   {
-	// @Test
-	public  String randomNumber() {
-		String SALTCHARS = "1234567890";
-		StringBuilder salt = new StringBuilder();
-		Random rnd = new Random();
-		while (salt.length() < 9) {
-			System.out.println(salt.length());
-			System.out.println(rnd.nextFloat());
-			System.out.println(SALTCHARS.length());
-			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-//			int index = rnd.nextInt() * SALTCHARS.length();
-			
-			salt.append(SALTCHARS.charAt(index));
-			System.out.println(salt);
-		}
-		String saltStr = salt.toString();
-		return "9" + saltStr;
-	}
-	
-	@Test
-	private void rakesh() {
-		
+	 @Test
+	public  void testt() {
+		 String[] s1=new String[1];
+		 String[] s2=new String[1];
 
-		System.out.println(randomNumber());
-		
+		 List<String[]> l1=new ArrayList<String[]>();
+		 l1.add(s1);
+		 List<String[]> l2=new ArrayList<String[]>();
+		 l2.add(s2);
+		 System.out.println(l1.equals(l2));
+		 
+		 
 	}
 }

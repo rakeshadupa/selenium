@@ -37,7 +37,7 @@ public class CompareExcelWithDB {
 		} else {
 			System.out
 					.println("excel rows are " + excelList.size() + "  database table rows are" + dataBaseList.size());
-			ExcelOperations.writeResult("result", 0,0,
+			ExcelOperations.writeResult("result", 0,
 					"excel rows are " + excelList.size() + "  database table rows are" + dataBaseList.size());
 			System.exit(0);
 
@@ -50,8 +50,9 @@ public class CompareExcelWithDB {
 
 				} else {
 					status = "false";
-					ExcelOperations.writeResult("result", i,0, "Error : Excel record value is " +excelList.get(i)[j]+"  but data base record value is  "+dataBaseList.get(i)[j]);
-					
+					ExcelOperations.writeResult("result", i, "Error : Excel record value is " + excelList.get(i)[j]
+							+ "  but data base record value is  " + dataBaseList.get(i)[j]);
+
 					break;
 
 				}
@@ -59,9 +60,8 @@ public class CompareExcelWithDB {
 			}
 			System.out.println(status);
 			if (status.equals("true")) {
-				ExcelOperations.writeResult("result", i,0, status);	
+				ExcelOperations.writeResult("result", i, status);
 			}
-			
 
 		}
 

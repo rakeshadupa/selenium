@@ -41,14 +41,14 @@ public class ExcelOperations {
 		return data;
 	}
 
-	public static void writeResult(String sheetName, int row,int cell, String message)
+	public static void writeResult(String sheetName, int row, String message)
 			throws EncryptedDocumentException, InvalidFormatException, IOException {
 		File f = new File(filePath);
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = WorkbookFactory.create(fis);
 		Sheet s = w.getSheet(sheetName);
 		
-		s.createRow(row).createCell(cell).setCellValue(message);
+		s.createRow(row).createCell(0).setCellValue(message);
 		FileOutputStream fos = new FileOutputStream(f);
 		w.write(fos);
 
