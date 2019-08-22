@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2123" started-at="2019-08-22T10:25:35Z" finished-at="2019-08-22T10:25:37Z">
+  <suite name="Default suite" duration-ms="1849" started-at="2019-08-22T10:30:10Z" finished-at="2019-08-22T10:30:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2123" started-at="2019-08-22T10:25:35Z" finished-at="2019-08-22T10:25:37Z">
+    <test name="Default test" duration-ms="1849" started-at="2019-08-22T10:30:10Z" finished-at="2019-08-22T10:30:12Z">
       <class name="demo.CompareExcelWithDB">
-        <test-method status="PASS" signature="testCompareExcelWithDB()[pri:0, instance:demo.CompareExcelWithDB@5f2050f6]" name="testCompareExcelWithDB" duration-ms="2081" started-at="2019-08-22T15:55:35Z" finished-at="2019-08-22T15:55:37Z">
+        <test-method status="PASS" signature="testCompareExcelWithDB()[pri:0, instance:demo.CompareExcelWithDB@5f2050f6]" name="testCompareExcelWithDB" duration-ms="1813" started-at="2019-08-22T16:00:10Z" finished-at="2019-08-22T16:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompareExcelWithDB -->
