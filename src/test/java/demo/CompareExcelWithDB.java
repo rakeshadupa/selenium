@@ -26,10 +26,14 @@ public class CompareExcelWithDB {
 	@Test
 	public void testCompareExcelWithDB() throws ClassNotFoundException, SQLException, EncryptedDocumentException,
 			InvalidFormatException, IOException {
+		ExcelOperations ex= new ExcelOperations();
+		
+		
 
-		List<String[]> excelList = ExcelOperations.getExcelData("employee");
+		List<String[]> excelList = ex.getExcelData("employee");
 
 		List<String[]> dataBaseList = connectDBGetData(dbName, tableName, port, userName, password);
+		ex.writeDBData("dbdata", dataBaseList);
 
 		if (excelList.size() == dataBaseList.size()) {
 			System.out.println("rows matched");
@@ -47,7 +51,7 @@ public class CompareExcelWithDB {
 
 				} else {
 					status = "false";
-					ExcelOperations.writeResult("result", i, "Error : Excel record value is " + excelList.get(i)[j]
+					ex.writeResult("result", i, "Error : Excel record value is " + excelList.get(i)[j]
 							+ "  but data base record value is  " + dataBaseList.get(i)[j]);
 
 					break;
@@ -57,11 +61,11 @@ public class CompareExcelWithDB {
 			}
 			System.out.println(status);
 			if (status.equals("true")) {
-				ExcelOperations.writeResult("result", i, status);
+				ex.writeResult("result", i, status);
 			}
 
 		}
-
+		ex.closeExcelStream();
 		closeConnections();
 
 	}

@@ -2,6 +2,7 @@ package demo;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,17 +17,27 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelOperations {
 
-	static String filePath = "./src/databaseSheet.xlsx";
+	private String filePath = "./src/databaseSheet.xlsx";
+	private File f;
+	private FileInputStream fis;
+	private Workbook w;
+	private Sheet s;
+	private List<String[]> data;
 
-	public static List<String[]> getExcelData(String sheetName)
-			throws EncryptedDocumentException, InvalidFormatException, IOException {
-		File f = new File(filePath);
-		FileInputStream fis = new FileInputStream(f);
-		Workbook w = WorkbookFactory.create(fis);
-		Sheet s = w.getSheet(sheetName);
+	public ExcelOperations() throws EncryptedDocumentException, InvalidFormatException, IOException {
+
+		f = new File(filePath);
+		fis = new FileInputStream(f);
+		w = WorkbookFactory.create(fis);
+
+	}
+
+	public List<String[]> getExcelData(String sheetName) {
+
+		s = w.getSheet(sheetName);
 		int rowCount = s.getLastRowNum();
 		int columnCount = s.getRow(0).getLastCellNum();
-		List<String[]> data = new ArrayList<>();
+		data = new ArrayList<>();
 		String[] rows = null;
 		for (int i = 1; i <= rowCount; i++) {
 			rows = new String[columnCount];
@@ -41,17 +52,29 @@ public class ExcelOperations {
 		return data;
 	}
 
-	public static void writeResult(String sheetName, int row, String message)
-			throws EncryptedDocumentException, InvalidFormatException, IOException {
-		File f = new File(filePath);
-		FileInputStream fis = new FileInputStream(f);
-		Workbook w = WorkbookFactory.create(fis);
-		Sheet s = w.getSheet(sheetName);
-		
+	public void writeResult(String sheetName, int row, String message) throws IOException {
+		s = w.getSheet(sheetName);
+
 		s.createRow(row).createCell(0).setCellValue(message);
+
+	}
+
+	public void writeDBData(String sheetName, List<String[]> dbData) throws IOException {
+		s = w.getSheet(sheetName);
+		for (int i = 0; i < dbData.size(); i++) {
+			s.createRow(i);
+			for (int j = 0; j < dbData.get(0).length; j++) {
+				s.getRow(i).createCell(j).setCellValue(dbData.get(i)[j]);
+
+			}
+
+		}
+
+	}
+
+	public void closeExcelStream() throws IOException {
 		FileOutputStream fos = new FileOutputStream(f);
 		w.write(fos);
-
 	}
 
 }
