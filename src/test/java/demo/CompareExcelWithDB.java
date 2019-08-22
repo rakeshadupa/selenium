@@ -39,7 +39,6 @@ public class CompareExcelWithDB {
 					.println("excel rows are " + excelList.size() + "  database table rows are" + dataBaseList.size());
 			ExcelOperations.writeResult("result", 0,
 					"excel rows are " + excelList.size() + "  database table rows are" + dataBaseList.size());
-			System.exit(0);
 
 		}
 		for (int i = 0; i < excelList.size(); i++) {
