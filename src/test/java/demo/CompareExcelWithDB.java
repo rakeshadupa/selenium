@@ -18,6 +18,7 @@ public class CompareExcelWithDB {
 	Statement stmt = null;
 	ResultSet resultSet = null;
 	String dbName = "testing_rakesh";
+
 	String port = "3306";
 	String userName = "root";
 	String password = "";
@@ -26,9 +27,7 @@ public class CompareExcelWithDB {
 	@Test
 	public void testCompareExcelWithDB() throws ClassNotFoundException, SQLException, EncryptedDocumentException,
 			InvalidFormatException, IOException {
-		ExcelOperations ex= new ExcelOperations();
-		
-		
+		ExcelOperations ex = new ExcelOperations();
 
 		List<String[]> excelList = ex.getExcelData("employee");
 

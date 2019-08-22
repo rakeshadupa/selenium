@@ -2,7 +2,6 @@ package demo;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -59,8 +58,16 @@ public class ExcelOperations {
 
 	}
 
-	public void writeDBData(String sheetName, List<String[]> dbData) throws IOException {
-		s = w.getSheet(sheetName);
+	public void writeDBData(String newSheetName, List<String[]> dbData) throws IOException {
+
+		for (int i = 0; i < w.getNumberOfSheets(); i++) {
+			if (w.getSheetName(i).equals(newSheetName)) {
+				w.removeSheetAt(i);
+				break;
+			}
+
+		}
+		s = w.createSheet(newSheetName);
 		for (int i = 0; i < dbData.size(); i++) {
 			s.createRow(i);
 			for (int j = 0; j < dbData.get(0).length; j++) {
