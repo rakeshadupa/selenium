@@ -90,6 +90,7 @@ public class CompareExcelWithDB {
 
 			
 			data.add(record);
+			
 		}
 		return data;
 	}
