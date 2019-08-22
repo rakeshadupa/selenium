@@ -73,7 +73,6 @@ public class CompareExcelWithDB {
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:" + port + "/" + dbName, userName, password);
 
 		stmt = conn.createStatement();
-
 		resultSet = stmt.executeQuery("select * from " + tableName);
 		int columnCount = resultSet.getMetaData().getColumnCount();
 
@@ -96,6 +95,7 @@ public class CompareExcelWithDB {
 			try {
 				resultSet.close();
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 
@@ -103,6 +103,7 @@ public class CompareExcelWithDB {
 			try {
 				stmt.close();
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 
@@ -110,6 +111,7 @@ public class CompareExcelWithDB {
 			try {
 				conn.close();
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	}

@@ -16,7 +16,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelOperations {
 
-	static String filePath = "D:\\Rakesh\\Rakesh_workspace\\sample_maven_project\\src\\databaseSheet.xlsx";
+	static String filePath = "./src/databaseSheet.xlsx";
 
 	public static List<String[]> getExcelData(String sheetName)
 			throws EncryptedDocumentException, InvalidFormatException, IOException {
