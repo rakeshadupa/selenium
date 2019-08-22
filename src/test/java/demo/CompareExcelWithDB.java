@@ -88,6 +88,7 @@ public class CompareExcelWithDB {
 				record[j] = resultSet.getString(j + 1).trim();
 			}
 
+			
 			data.add(record);
 		}
 		return data;
