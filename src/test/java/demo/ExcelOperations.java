@@ -51,8 +51,14 @@ public class ExcelOperations {
 		return data;
 	}
 
+	boolean isNewSheetCreated = false;
+
 	public void writeResult(String sheetName, int row, String message) throws IOException {
-		s = w.getSheet(sheetName);
+		if (!isNewSheetCreated) {
+			removeSheet(sheetName);
+			s = w.createSheet(sheetName);
+			isNewSheetCreated = true;
+		}
 
 		s.createRow(row).createCell(0).setCellValue(message);
 
@@ -60,13 +66,7 @@ public class ExcelOperations {
 
 	public void writeDBData(String newSheetName, List<String[]> dbData) throws IOException {
 
-		for (int i = 0; i < w.getNumberOfSheets(); i++) {
-			if (w.getSheetName(i).equals(newSheetName)) {
-				w.removeSheetAt(i);
-				break;
-			}
-
-		}
+		removeSheet(newSheetName);
 		s = w.createSheet(newSheetName);
 		for (int i = 0; i < dbData.size(); i++) {
 			s.createRow(i);
@@ -77,6 +77,16 @@ public class ExcelOperations {
 
 		}
 
+	}
+
+	private void removeSheet(String sheet) {
+		for (int i = 0; i < w.getNumberOfSheets(); i++) {
+			if (w.getSheetName(i).equals(sheet)) {
+				w.removeSheetAt(i);
+				break;
+			}
+
+		}
 	}
 
 	public void closeExcelStream() throws IOException {

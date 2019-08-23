@@ -18,7 +18,6 @@ public class CompareExcelWithDB {
 	Statement stmt = null;
 	ResultSet resultSet = null;
 	String dbName = "testing_rakesh";
-
 	String port = "3306";
 	String userName = "root";
 	String password = "";
