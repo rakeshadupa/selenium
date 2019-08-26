@@ -23,13 +23,16 @@ public class CompareMerchantData {
 	private FileInputStream fis;
 	private Workbook w;
 	private List<String> data;
+	private String uncommonSheetName = "uncommondata";
+	private String inputSheetName = "inputfile";
+	private String ccrTansSheetName = "ccrtans";
 
 	@Test
 	private void testCompareMerchantData() throws EncryptedDocumentException, InvalidFormatException, IOException {
 
-		List<String> inputList = getExcelColoumnData("inputfile");
-		List<String> ccrTansList = getExcelColoumnData("ccrtans");
-		int uncommonRowCount = 1;
+		List<String> inputList = getExcelColoumnData(inputSheetName);
+		List<String> ccrTansList = getExcelColoumnData(ccrTansSheetName);
+		int uncommonRowCount = 0;
 		for (int i = 0; i < ccrTansList.size(); i++) {
 
 			String ccrTrans = ccrTansList.get(i);
@@ -45,11 +48,16 @@ public class CompareMerchantData {
 
 			}
 			if (!status) {
-				writeUncommonData("uncommondata", getRowData("ccrtans", i + 1), uncommonRowCount);
+				writeUncommonData(uncommonSheetName, getRowData("ccrtans", i + 1), uncommonRowCount + 1);
 				uncommonRowCount++;
 			}
 
 		}
+		if (uncommonRowCount == 0) {
+			// removeSheet(sheet);
+
+		}
+
 		closeExcelConnections();
 
 	}
