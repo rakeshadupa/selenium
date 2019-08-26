@@ -56,6 +56,8 @@ public class CompareMerchantData {
 		}
 		if (uncommonRowCount == 0) {
 			 removeSheet(uncommonSheetName);
+			 System.out.println("no uncommon data detected so uncommon sheet not created");
+			 
 
 		}
 
