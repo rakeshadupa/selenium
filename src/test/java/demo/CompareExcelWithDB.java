@@ -87,9 +87,8 @@ public class CompareExcelWithDB {
 				record[j] = resultSet.getString(j + 1).trim();
 			}
 
-			
 			data.add(record);
-			
+
 		}
 		return data;
 	}
@@ -101,8 +100,8 @@ public class CompareExcelWithDB {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			
 		}
-
 		if (stmt != null) {
 			try {
 				stmt.close();
@@ -110,7 +109,6 @@ public class CompareExcelWithDB {
 				e.printStackTrace();
 			}
 		}
-
 		if (conn != null) {
 			try {
 				conn.close();

@@ -1,17 +1,22 @@
 package com.maven.sample;
 
 import java.io.File;
-import java.util.Map;
-
-import org.testng.annotations.Test;
 
 public class Practice1 {
-	@Test
-	public void testt() {
+	public static int main(String[] args) {
 
-		File f=new File("./src/databaseSheet.xlsx");
-			System.out.println(f.exists());
-		
+		try {
+			System.out.println("try");
+			throw new Exception();
+
+		} catch (Exception e) {
+			System.out.println("catch");
+			File f = new File("");
+			return 1;
+
+		} finally {
+			System.out.println("outside");
+		}
 
 	}
 }

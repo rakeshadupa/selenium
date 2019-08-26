@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1764" started-at="2019-08-23T04:22:11Z" finished-at="2019-08-23T04:22:13Z">
+  <suite name="Default suite" duration-ms="371" started-at="2019-08-26T06:04:46Z" finished-at="2019-08-26T06:04:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1764" started-at="2019-08-23T04:22:11Z" finished-at="2019-08-23T04:22:13Z">
-      <class name="demo.CompareExcelWithDB">
-        <test-method status="PASS" signature="testCompareExcelWithDB()[pri:0, instance:demo.CompareExcelWithDB@5f2050f6]" name="testCompareExcelWithDB" duration-ms="1727" started-at="2019-08-23T09:52:11Z" finished-at="2019-08-23T09:52:13Z">
+    <test name="Default test" duration-ms="371" started-at="2019-08-26T06:04:46Z" finished-at="2019-08-26T06:04:47Z">
+      <class name="merchant.CompareMerchantData">
+        <test-method status="PASS" signature="testCompareMerchantData()[pri:0, instance:merchant.CompareMerchantData@47eaca72]" name="testCompareMerchantData" duration-ms="344" started-at="2019-08-26T11:34:46Z" finished-at="2019-08-26T11:34:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCompareExcelWithDB -->
-      </class> <!-- demo.CompareExcelWithDB -->
+        </test-method> <!-- testCompareMerchantData -->
+      </class> <!-- merchant.CompareMerchantData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
