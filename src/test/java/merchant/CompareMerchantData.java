@@ -33,6 +33,7 @@ public class CompareMerchantData {
 		List<String> inputList = getExcelColoumnData(inputSheetName);
 		List<String> ccrTansList = getExcelColoumnData(ccrTansSheetName);
 		int uncommonRowCount = 0;
+		writeUncommonData(uncommonSheetName, getRowData("ccrtans", 0), 0);
 		for (int i = 0; i < ccrTansList.size(); i++) {
 
 			String ccrTrans = ccrTansList.get(i);
@@ -54,7 +55,7 @@ public class CompareMerchantData {
 
 		}
 		if (uncommonRowCount == 0) {
-			// removeSheet(sheet);
+			 removeSheet(uncommonSheetName);
 
 		}
 
